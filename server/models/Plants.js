@@ -13,6 +13,10 @@ const plantSchema = new Schema(
     plantImg: {
       type: String
     },
+    sunlight: {
+      type: Schema.Types.ObjectId,
+      ref: 'Sunlight',
+    },
     zones: [
       {
         type: Schema.Types.ObjectId,
