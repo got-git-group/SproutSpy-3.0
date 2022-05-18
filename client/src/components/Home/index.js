@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <img src={bg} alt='' id='bphoto' style={{ minHeight: '100%', minWidth: '100%', borderRadius: '20px', opacity: '.2' }}> 
+            <img src={bg} alt='' style={{ minHeight: '100%', minWidth: '100%', borderRadius: '20px', opacity: '.2' }}> 
             </img>
             <Footer />
         </>
