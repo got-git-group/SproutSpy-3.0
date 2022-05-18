@@ -1,0 +1,18 @@
+html, body, #root {
+  font-family: Calibri;
+  height: 100%;
+  }
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes glow {
+  from {
+  text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #e60073, 0 0 10px #e60073, 0 0 12.5px #e60073, 0 0 15px #e60073, 0 0 17.5px #e60073;
+  }
+  to {
+  text-shadow: 0 0 5px #fff, 0 0 7.5px #ff4da6, 0 0 10px #ff4da6, 0 0 12.5px #ff4da6, 0 0 15px #ff4da6, 0 0 17.5px #ff4da6, 0 0 20px #ff4da6;
+  }
+}

@@ -1,11 +1,9 @@
-import Home from '../Home';
-// import Output from '../Output';
+import Home from '../Home'; // import Output from '../Output';
 
 const Layout = () => {
     return (
         <>
-          <Home />
-          {/* <Output /> */}
+          <Home /> {/* <Output /> */}
         </>
     );
 }
