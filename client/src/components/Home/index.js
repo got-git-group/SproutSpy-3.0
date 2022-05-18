@@ -1,12 +1,13 @@
 import Header from '../Header';
 import Footer from '../Footer';
-import bg from './images/projectPhoto.jpg';
+import bg from '../../assets/images/projectPhoto.jpg'
 
 const Home = () => {
     return (
         <>
-            <img src={bg} alt='project photo' />
             <Header />
+            <img src={bg} alt='' id='bphoto' style={{ minHeight: '100%', minWidth: '100%', borderRadius: '20px', opacity: '.2' }}> 
+            </img>
             <Footer />
         </>
     )
