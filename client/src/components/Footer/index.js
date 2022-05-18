@@ -1,4 +1,5 @@
 import './index.scss';
+import Logo from './images/logo.png';
 
 
 const Footer = () => {
@@ -11,8 +12,7 @@ const Footer = () => {
 
                 <a className='glow' href='https://github.com/got-git-group'>GotGitGroup</a>
                 
-                {/* https://github.com/got-git-group/SproutSpy-3.0/blob/andysprout3/client/assets/images/logo.png */}
-                <img src='https://cdn-icons-png.flaticon.com/512/2796/2796224.png' alt='Sprout Spy Logo'></img>
+                <img src={Logo} alt='sproutspy logo' />
             </footer>
         </>
     )
