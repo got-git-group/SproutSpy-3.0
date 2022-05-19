@@ -1,6 +1,7 @@
 import Header from '../Header';
 import Footer from '../Footer';
-import bg from '../../assets/images/projectPhoto.jpg'
+import bg from '../../assets/images/projectPhoto.jpg';
+import './index.scss'
 
 const Home = () => {
     return (

@@ -1,4 +1,5 @@
 import Home from '../Home'; // import Output from '../Output';
+import './index.scss';
 
 const Layout = () => {
     return (
