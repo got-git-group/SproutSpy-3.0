@@ -10,6 +10,9 @@ const plantSchema = new Schema(
       type: String,
       required: true,
     },
+    seedDepth: {
+      type: String,
+    },
     plantImg: {
       type: String
     },
@@ -17,12 +20,21 @@ const plantSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: 'Sunlight',
     },
+    indoorStartCalc: {
+      type: Number
+    },
+    outdoorStartCalc: {
+      type: Number
+    },
     zones: [
       {
         type: Schema.Types.ObjectId,
         ref: 'Zone'
       }
-    ]
+    ],
+    recommended: {
+      type: Boolean,
+    }
   }
 );
 
