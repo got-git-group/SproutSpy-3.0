@@ -1,0 +1,14 @@
+[
+    {
+      "sunlightName": "Full Sun"
+    },
+    {
+      "sunlightName": "Partial Sun"
+    },
+    {
+      "sunlightName": "Partial Shade"
+    },
+    {
+      "sunlightName": "Full Shade"
+    }
+]
