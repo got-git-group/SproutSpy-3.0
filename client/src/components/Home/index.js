@@ -1,13 +1,16 @@
-import React from 'react';
+import Header from '../Header';
+import Footer from '../Footer';
+import bg from '../../assets/images/projectPhoto.jpg'
 
 const Home = () => {
     return (
         <>
-            <p>Hello World!</p>
+            <Header />
+            <img src={bg} alt='' style={{ minHeight: '100%', minWidth: '100%', borderRadius: '20px', opacity: '.2' }}> 
+            </img>
+            <Footer />
         </>
     )
 }
-
-
 
 export default Home;

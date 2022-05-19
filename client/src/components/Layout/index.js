@@ -1,9 +1,9 @@
-import Home from '../Home';
+import Home from '../Home'; // import Output from '../Output';
 
 const Layout = () => {
     return (
         <>
-          <Home /> 
+          <Home /> {/* <Output /> */}
         </>
     );
 }

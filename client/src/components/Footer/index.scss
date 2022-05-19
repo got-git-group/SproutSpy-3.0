@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    height: min-content;
+    background-color: #ffd1dc;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    border-radius: 10px;
+
+    & > h1 {
+        font-size: 18px;
+        color: white;
+        padding-left: 10px;
+        margin-block-start: 0.0;
+        margin-block-end: 0.0
+    }
+
+    & > .glow {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-animation: glow .5s ease-in-out infinite alternate;
+        -moz-animation: glow .5s ease-in-out infinite alternate;
+        animation: glow .5s ease-in-out infinite alternate;
+        font-size: 10px;
+        transform: scale( 1.5, .8 );
+        color: white;
+        text-decoration: underline;
+    }
+
+    & > img {
+        width: 12px;
+        height: 12px;
+        padding-right: 10px;
+    }
+
+}

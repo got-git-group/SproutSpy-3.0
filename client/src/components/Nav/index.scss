@@ -1,0 +1,22 @@
+ul {
+    margin: 0;
+    padding: 0;
+
+    & > li {
+        font-size: 18px;
+        display: inline-flex;
+        padding-right: 18px;
+        margin-block-start: 0.0;
+        margin-block-end: 0.0;
+
+        & > :hover {
+            transition: 500ms;
+            transform: translateY(-5px)
+            }
+
+    & > a {
+        color: white;
+        text-decoration: none;
+        }
+    }
+}
