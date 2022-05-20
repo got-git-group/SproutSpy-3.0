@@ -1,106 +1,80 @@
 [
     {
-      "id":  1,
       "zoneName": "zone 1a"
     },
     {
-      "id":  2,
       "zoneName": "zone 1b"
     },
     {
-      "id":  3,
       "zoneName": "zone 2a"
     },
     {
-      "id":  4,
       "zoneName": "zone 2b"
     },
     {
-      "id":  5,
       "zoneName": "zone 3a"
     },
     {
-      "id":  6,
       "zoneName": "zone 3b"
     },
     {
-      "id":  7,
       "zoneName": "zone 4a"
     },
     {
-      "id":  8,
       "zoneName": "zone 4b"
     },
     {
-      "id":  9,
       "zoneName": "zone 5a"
     },
     {
-      "id":  10,
       "zoneName": "zone 5b"
     },
     {
-      "id":  11,
       "zoneName": "zone 6a"
     },
     {
-      "id":  12,
       "zoneName": "zone 6b"
     },
     {
-      "id":  13,
       "zoneName": "zone 7a"
     },
     {
-      "id":  14,
       "zoneName": "zone 7b"
     },
     {
-      "id":  15,
       "zoneName": "zone 8a"
     },
     {
-      "id":  16,
       "zoneName": "zone 8b"
     },
     {
-      "id":  17,
       "zoneName": "zone 9a"
     },
     {
-      "id":  18,
       "zoneName": "zone 9b"
     },
     {
-      "id":  19,
       "zoneName": "zone 10a"
     },
     {
-      "id":  20,
       "zoneName": "zone 10b"
     },
     {
-      "id":  21,
       "zoneName": "zone 11a"
     },
     {
-      "id":  22,
       "zoneName": "zone 11b"
     },
     {
-      "id":  23,
       "zoneName": "zone 12a"
     },
     {
-      "id":  24,
       "zoneName": "zone 12b"
     },
     {
-      "id":  25,
       "zoneName": "zone 13a"
     },
     {
-      "id":  26,
       "zoneName": "zone 13b"
     }
 ]

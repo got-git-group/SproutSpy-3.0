@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 const zoneSchema = new Schema(
   {
     zoneName: {
-      type: Number,
+      type: String,
       required: true,
     },
     plants: [
