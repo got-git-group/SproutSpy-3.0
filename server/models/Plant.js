@@ -17,8 +17,8 @@ const plantSchema = new Schema(
       type: String
     },
     sunlight: {
-      type: Schema.Types.ObjectId,
-      ref: 'Sunlight',
+      type: String,
+      required: true,
     },
     indoorStartCalc: {
       type: Number
