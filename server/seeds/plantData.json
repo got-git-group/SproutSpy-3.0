@@ -7,8 +7,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b"],
+      "recommended": false
     },
     {
       "plantName": "Peas",
@@ -18,8 +18,8 @@
       "sunlight": "Partial",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b"],
+      "recommended": true
     },
     {
       "plantName": "Spinach",
@@ -29,8 +29,8 @@
       "sunlight": "Partial Shade",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": true
     },
     {
       "plantName": "Cabbage",
@@ -40,8 +40,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b", "zone 12a", "zone 12b"],
+      "recommended": false
     },
     {
       "plantName": "Cauliflower",
@@ -51,8 +51,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
     },
     {
       "plantName": "Radish",
@@ -62,8 +62,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": true
     },
     {
       "plantName": "Beets",
@@ -73,8 +73,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
     },
     {
       "plantName": "Potatoes",
@@ -84,8 +84,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": true
     },
     {
       "plantName": "Broccoli",
@@ -95,8 +95,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
     },
     {
       "plantName": "Lettuce",
@@ -106,8 +106,8 @@
       "sunlight": "Partial Shade",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": true
     },
     {
       "plantName": "Carrots",
@@ -117,8 +117,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": false
     },
     {
       "plantName": "Chard",
@@ -128,8 +128,8 @@
       "sunlight": "Partial Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": false
     },
     {
       "plantName": "Green Beans (bush)",
@@ -139,8 +139,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": true
     },
     {
       "plantName": "Corn",
@@ -150,8 +150,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
     },
     {
       "plantName": "Cucumbers",
@@ -161,8 +161,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b", "zone 12a", "zone 12b"],
+      "recommended": true
     },
     {
       "plantName": "Squash (Summer)",
@@ -172,8 +172,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": false
     },
     {
       "plantName": "Melons",
@@ -183,8 +183,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
     },
     {
       "plantName": "Peppers",
@@ -194,8 +194,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
     },
     {
       "plantName": "Tomatoes",
@@ -205,8 +205,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": "true"
+      "zones": ["zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": true
     },
     {
       "plantName": "Okra",
@@ -216,8 +216,8 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
     },
     {
       "plantName": "Pumpkins",
@@ -227,7 +227,7 @@
       "sunlight": "Full Sun",
       "indoorStartCalc": "",
       "outdoorStartCalc": "",
-      "zones": "",
-      "recommended": ""
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b"],
+      "recommended": false
     }
 ]
