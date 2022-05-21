@@ -9,7 +9,9 @@ const Header = () => {
                     Sprout Spy
                 </h1>
 
-                <Nav />
+                <nav className='links'>
+                    <Nav />
+                </nav>
             </header>
         </>
     )

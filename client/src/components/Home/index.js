@@ -1,14 +1,11 @@
-import Header from '../Header';
-import Footer from '../Footer';
-import bg from '../../assets/images/projectPhoto.jpg'
+import bg from '../../assets/images/projectphoto.jpg';
+import './index.scss'
 
 const Home = () => {
     return (
         <>
-            <Header />
-            <img src={bg} alt='' style={{ minHeight: '100%', minWidth: '100%', borderRadius: '20px', opacity: '.2' }}> 
+            <img src={bg} alt='' className='image'>
             </img>
-            <Footer />
         </>
     )
 }

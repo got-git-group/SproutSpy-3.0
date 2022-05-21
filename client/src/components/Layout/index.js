@@ -1,9 +1,14 @@
-import Home from '../Home'; // import Output from '../Output';
+import Header from '../Header';
+import Footer from '../Footer';
+import { Outlet } from 'react-router-dom';
+import './index.scss';
 
 const Layout = () => {
     return (
         <>
-          <Home /> {/* <Output /> */}
+          <Header />
+          <Outlet />
+          <Footer />
         </>
     );
 }
