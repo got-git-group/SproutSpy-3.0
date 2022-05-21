@@ -1,0 +1,233 @@
+[
+    {
+      "plantName": "Onion",
+      "spacing": "3-4 inches",
+      "seedDepth": "1 inch",
+      "plantImg": "https://cdn.shopify.com/s/files/1/0257/4565/3811/articles/BONNIE_onions_iStock-892022394-1800px_cf21330f-cbf5-4e85-8212-15855474e8a6.jpg?v=1642541973",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Peas",
+      "spacing": "1-3 inches",
+      "seedDepth": "1-2 inches",
+      "plantImg": "https://www.shelovesbiscotti.com/wp-content/uploads/2021/07/How-to-Freeze-Fresh-Peas.jpg",
+      "sunlight": "Partial",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Spinach",
+      "spacing": "3 inches",
+      "seedDepth": "1/2 inch",
+      "plantImg": "",
+      "sunlight": "Partial Shade",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Cabbage",
+      "spacing": "24 inches",
+      "seedDepth": "",
+      "plantImg": "",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b", "zone 12a", "zone 12b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Cauliflower",
+      "spacing": "24 inches",
+      "seedDepth": "",
+      "plantImg": "",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Radish",
+      "spacing": "2-3 inches",
+      "seedDepth": "1/2 inch",
+      "plantImg": "",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Beets",
+      "spacing": "3 inches",
+      "seedDepth": "1/2 inch",
+      "plantImg": "",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Potatoes",
+      "spacing": "12 inches",
+      "seedDepth": "3 inches",
+      "plantImg": "https://www.denverpost.com/wp-content/uploads/2022/02/BASKET-OF-POTATOES.jpeg",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Broccoli",
+      "spacing": "12 inches",
+      "seedDepth": "1/2 inch",
+      "plantImg": "https://0201.nccdn.net/1_2/000/000/120/047/Broccoli--Marathon-Square-500x500.jpg",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Lettuce",
+      "spacing": "6 inches",
+      "seedDepth": "1/4 inch",
+      "plantImg": "https://thegardeningdad.com/wp-content/uploads/2020/05/lettuce-1024x683.jpg",
+      "sunlight": "Partial Shade",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Carrots",
+      "spacing": "2 inches",
+      "seedDepth": "1/4 inch",
+      "plantImg": "https://parkseed.com/images/xl/52925-PK-P1.jpg?v=101222632577-1",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Chard",
+      "spacing": "5 inches",
+      "seedDepth": "1/2 inch",
+      "plantImg": "https://images-na.ssl-images-amazon.com/images/I/61vArcfYrgL.jpg",
+      "sunlight": "Partial Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Green Beans (bush)",
+      "spacing": "3 inches",
+      "seedDepth": "1/2 inch",
+      "plantImg": "https://cdn.shopify.com/s/files/1/0089/1562/products/Bean_Bush_-_Harvester_seeds_800x.jpg?v=1624931809",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Corn",
+      "spacing": "14 inches",
+      "seedDepth": "2 inches",
+      "plantImg": "https://m.media-amazon.com/images/I/61kn8-S+VgL._AC_.jpg",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Cucumbers",
+      "spacing": "8 inches",
+      "seedDepth": "1 inch",
+      "plantImg": "https://cdn.shopify.com/s/files/1/1766/2959/products/Ashley_1_600x.jpg?v=1535249121",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b", "zone 12a", "zone 12b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Squash (Summer)",
+      "spacing": "8 inches",
+      "seedDepth": "3/4 inch",
+      "plantImg": "",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Melons",
+      "spacing": "8 inches",
+      "seedDepth": "1 inch",
+      "plantImg": "",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Peppers",
+      "spacing": "20 inches",
+      "seedDepth": "",
+      "plantImg": "https://gardenerspath.com/wp-content/uploads/2019/03/Grow-Sweet-Bell-Peppers-in-Your-Home-Veggie-Garden.jpg",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Tomatoes",
+      "spacing": "30 inches",
+      "seedDepth": "",
+      "plantImg": "",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": true
+    },
+    {
+      "plantName": "Okra",
+      "spacing": "12 inches",
+      "seedDepth": "1 inch",
+      "plantImg": "",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 2a", "zone 2b", "zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b", "zone 10a", "zone 10b", "zone 11a", "zone 11b"],
+      "recommended": false
+    },
+    {
+      "plantName": "Pumpkins",
+      "spacing": "12 inches",
+      "seedDepth": "1 inch",
+      "plantImg": "https://images.everydayhealth.com/images/easy-as-pie-pumpkin-recipes-for-fall-alt-1440x810.jpg",
+      "sunlight": "Full Sun",
+      "indoorStartCalc": "",
+      "outdoorStartCalc": "",
+      "zones": ["zone 3a", "zone 3b", "zone 4a", "zone 4b", "zone 5a", "zone 5b", "zone 6a", "zone 6b", "zone 7a", "zone 7b", "zone 8a", "zone 8b", "zone 9a", "zone 9b"],
+      "recommended": false
+    }
+]
