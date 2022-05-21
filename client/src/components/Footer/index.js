@@ -10,7 +10,7 @@ const Footer = () => {
                     SproutSpy
                 </h1>
 
-                <a className='glow' href='https://github.com/got-git-group'>GotGitGroup</a>
+                <a className='link' href='https://github.com/got-git-group'>GotGitGroup</a>
                 
                 <img src={Logo} alt='sproutspy logo' className='logo' />
             </footer>
