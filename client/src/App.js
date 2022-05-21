@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import AddPlant from './components/AddPlant';
+import Glossary from './components/Glossary';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={ <Layout /> } >
           <Route index element={ <Home /> } />
           <Route path="addplant" element={ <AddPlant /> } />
+          <Route path="glossary" element={ <Glossary /> } />
         </Route>
       </Routes>
     </>
