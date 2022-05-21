@@ -1,16 +1,29 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type ADDTYPEHERE {
+  type Plant {
+    _id: ID
+    plantName: String
+    spacing: String
+    seedDepth: String
+    plantImg: String
+    sunlight: String
+    indoorStartCalc: Int
+    outdoorStartCalc: Int
+    zones: [Zone]
+    recommended: Boolean
+  }
 
+  type Zone {
+    _id: ID
+    zoneName: String
   }
 
   type Query {
-
-  }
-
-  type Mutation {
-
+    plants: [Plant]
+    zones: [Zone]
+    getPlantsByZone(zoneId: ID!): [Plant]
+    getRecommendedPlants(zoneId: ID!): [Plant]
   }
 `;
 
