@@ -6,12 +6,12 @@ const zoneSchema = new Schema(
       type: String,
       required: true,
     },
-    plants: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Plant'
-      }
-    ] 
+    // plants: [
+    //   {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Plant'
+    //   }
+    // ] 
   }
 );
 
