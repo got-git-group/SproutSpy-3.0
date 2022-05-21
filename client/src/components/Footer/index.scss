@@ -10,20 +10,20 @@
     
     h1 {
         font-size: 18px;
-        color: white;
+        color: #2c8b71;
         padding-left: 10px;
     }
 
     .glow {
-        color: white;
         font-family: 'comfortaa';
         -webkit-animation: glow .5s ease-in-out infinite alternate;
         -moz-animation: glow .5s ease-in-out infinite alternate;
         animation: glow .5s ease-in-out infinite alternate;
-        font-size: 10px;
+        font-size: 15px;
         transform: scale( 1.5, .8 );
-        color: white;
+        color: rgb(177, 50, 177);
         text-decoration: underline;
+        opacity: .6;
     }
 
     .logo {
