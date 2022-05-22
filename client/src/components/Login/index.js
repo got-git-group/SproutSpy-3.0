@@ -1,4 +1,4 @@
-import bg from 
+import bg from '../../assets/images/login.jpg';
 import './index.scss';
 
 const Login = () => {
@@ -9,3 +9,5 @@ const Login = () => {
         </>
     )
 }
+
+export default Login;
