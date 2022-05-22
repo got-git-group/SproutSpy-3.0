@@ -1,12 +1,13 @@
 .footer {
     display: flex;
     width: stretch;
-    margin: 45px 1px 0 1px; 
+    margin: -30px 1px 0 1px; 
     height: 30px;
     background-color: #ffd1dc;
     justify-content: space-between;
     align-items: center;
     border-radius: 25px 25px 0 0;
+    z-index: 1;
     
     h1 {
         font-size: 18px;

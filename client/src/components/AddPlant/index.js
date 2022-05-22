@@ -4,7 +4,7 @@ import './index.scss';
 const AddPlant = () => {
     return (
         <>
-            <img src={bg} alt='' className='image'>
+            <img src={bg} alt='' className='backgroundImage'>
             </img>
         </>
     )
