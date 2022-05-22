@@ -1,2 +1,13 @@
 @import 'animate.css';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+.backgroundImage {
+    position: relative;
+    // min-height: stretch;
+    // min-width: stretch;
+    width: 100vw;
+    height: auto;
+    opacity: .5;
+    z-index: 0;
+    object-fit: stretch;
+}
