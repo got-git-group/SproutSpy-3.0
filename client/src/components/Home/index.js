@@ -1,4 +1,5 @@
-import bg from '../../assets/images/projectphoto.jpg';
+import LoginButton from '../LoginButton';
+import bg from '../../assets/images/projectPhoto.jpg';
 import './index.scss'
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <>
             <img src={bg} alt='' className='image'>
             </img>
+            <LoginButton />
         </>
     )
 }
