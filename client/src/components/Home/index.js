@@ -5,7 +5,7 @@ import './index.scss'
 const Home = () => {
     return (
         <>
-            <img src={bg} alt='' className='image'>
+            <img src={bg} alt='' className='backgroundImage'>
             </img>
             {/* <LoginButton /> */}
         </>
