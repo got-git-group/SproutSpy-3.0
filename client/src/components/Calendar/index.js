@@ -23,18 +23,18 @@ const events = [
   {
     title: 'All Day Event very long title',
     allDay: true,
-    start: new Date(2022, 5, 0),
-    end: new Date(2022, 5, 1),
+    start: new Date(2022, 4, 1),
+    end: new Date(2022, 4, 2),
   },
   {
     title: 'Long Event',
-    start: new Date(2022, 5, 7),
-    end: new Date(2022, 5, 10),
+    start: new Date(2022, 4, 7),
+    end: new Date(2022, 4, 10),
   },
   {
     title: 'Other Event',
-    start: new Date(2022, 5, 9),
-    end: new Date(2022, 5, 10),
+    start: new Date(2022, 4, 9),
+    end: new Date(2022, 4, 10),
   },
 ]
 
