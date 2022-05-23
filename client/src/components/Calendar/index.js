@@ -1,4 +1,4 @@
-import './index.sass';
+import './index.scss';
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import format from 'date-fns/format';
@@ -48,28 +48,27 @@ const MyCalendar= ()=> {
   }
 
   return (
-    <div className="Calendar">
+    <div className="calendar-container">
       <h1>Calendar</h1>
       <h2>Add New Event</h2>
       <div>
         <input 
-        type="text" placeholder="Title" style={{width: "20%", marginRight: "10px"}} 
-          value={newEvent.title} onChange={(e)=> setNewEvent({...newEvent, title: e.target.value})}
+        type="text" placeholder="Title" value={newEvent.title} onChange={(e)=> setNewEvent({...newEvent, title: e.target.value})}
         />
-        <DatePicker placehoderText="Start Date" style={{marginRight: "10px"}}
+        <DatePicker className="start-date" placehoderText="Start Date"
         selected={newEvent.start} onChange={(start) => setNewEvent({...newEvent, start})}
         />  
-        <DatePicker placehoderText="End Date"
+        <DatePicker className="end-date" placehoderText="End Date"
         selected={newEvent.end} onChange={(end) => setNewEvent({...newEvent, end})}
         />
-        <button style={{marginTop: "10px"}} onClick={handleAddEvent}>Add Event</button>
+        <button className="add-event" onClick={handleAddEvent}>Add Event</button>
       </div>
       <Calendar 
       localizer={localizer} 
       events={allEvents} 
       startAccessor="start" 
-      endAccessor="end" s
-      tyle={{height:500, margin: "50px"}} 
+      endAccessor="end" 
+      className="calendar-element"
       />
     </div>
   );
