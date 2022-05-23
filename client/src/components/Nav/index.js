@@ -20,6 +20,9 @@ const Nav = () => {
                     {loggedIn && <li className='itemnav'>
                         <a href='/addplant'>Add Plant</a>
                     </li> }
+                    {loggedIn && <li className='itemnav'>
+                        <a href='/calendar'>Calendar</a>
+                    </li> }
                     { loggedIn && <li className='itemnavlog'>
                         <LogoutButton />
                     </li> }
