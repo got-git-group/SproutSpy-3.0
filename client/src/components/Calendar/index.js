@@ -7,6 +7,7 @@ import startOfWeek from 'date-fns/startOfWeek';
 import getDay from 'date-fns/getDay';
 import React, { useState } from 'react';
 import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const locales = {
   "en-US": require('date-fns/locale/en-US'),
