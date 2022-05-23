@@ -46,15 +46,8 @@ THEN I can add a plant to the database.
 	
 ## Technologies
 This project is created with:
-** Html
-* CSS
-* Javascript
-* Jquery
-* Google Maps API
-* Google Places API
-* C0bra API
-* Openweathermaps API
 * Full MERN Stack
+* Auth0 for authentication
 
 --- UPDATE TECH ---
 
