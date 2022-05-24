@@ -1,5 +1,5 @@
 import './index.scss';
-// import bg from '../../assets/images/calendar.jpg'
+import bg from '../../assets/images/calendar.jpg'
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import format from 'date-fns/format';
@@ -50,7 +50,10 @@ const MyCalendar= ()=> {
 
 
   return (
-    <>
+
+    <div style={{ backgroundImage:`url(${bg})`, minHeight: '100%',
+    minWidth: '100%',
+    backgroundSize:'contain' }} className='backgroundImage'>
       <div className="calendar-container">
         <header className='headerCal'>
           <h1>Calendar</h1>
@@ -79,7 +82,7 @@ const MyCalendar= ()=> {
         className="calendar-element"
         />
       </div>
-    </>
+    </div>
   );
 }
 
