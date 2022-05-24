@@ -1,6 +1,6 @@
 $assetPath :"/assets/images";
 #imageCal {
-  background: url(#{$assetPath}/calendar.jpg);
+  background-image: url(#{$assetPath}/calendar.jpg);
   min-width: stretch;
   min-height: stretch;
   background-size: contain;
@@ -10,6 +10,7 @@ $assetPath :"/assets/images";
   min-height: stretch;
   position:static;
 }
+
     .headerCal {
         text-align: center;
       }
@@ -25,8 +26,10 @@ $assetPath :"/assets/images";
 
       .add-event {
         margin: 10px 0 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #ffffea;
       }
-
   .calendar-element {
     max-height: 65%;
     max-width:  90%;
