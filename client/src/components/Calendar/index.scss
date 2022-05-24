@@ -1,6 +1,15 @@
+$assetPath :"/assets/images";
+body {
+  background: url(#{$assetPath}/calendar.jpg);
+  min-width: stretch;
+  min-height: stretch;
+  background-size: contain;
+}
+
 .calendar-container {
   min-width: stretch;
   min-height: stretch;
+  position:static;
 
     .headerCal {
         text-align: center;
@@ -21,12 +30,32 @@
     }
 
   .calendar-element {
-    max-height: 70%;
+    max-height: 65%;
     max-width:  90%;
+    margin: auto;
     overflow-y: visible;
-    margin:auto;
+    
+    .rbc-btn-group {
+      background-color: lighten($color: #ade8f4, $amount: 8);
+    }
+
+    .rbc-header {
+      background-color: lighten($color: #ffc8dd, $amount: 8);
+    }
+
+    .rbc-agenda-group {
+      background-color: lighten($color: #ade8f4, $amount: 8);
+      max-height: 65%;
+    }
+
+    .rbc-time-view {
+      background-color: lighten($color: #ffffea, $amount: 1.5);
+      max-height: 65%;
+    }
 
     .rbc-month-row {
+      background-color: lighten($color: #ffffea, $amount: 1.5);
+      max-height: 65%;
       z-index: -1;
     }
   }
