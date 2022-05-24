@@ -1,16 +1,62 @@
+$assetPath :"/assets/images";
+#imageCal {
+  background-image: url(#{$assetPath}/calendar.jpg);
+  min-width: stretch;
+  min-height: stretch;
+  background-size: contain;
+
 .calendar-container {
-  input {
-    width: 20%;
-    margin-right: 10px;
-  }
-  .start-date {
-    margin-right: 10px;
-  }
-  .add-event {
-    margin-top: 10px;
-  }
-  .calendar-element {
-    height: 500px;
-    margin: 50px;
-  }
+  min-width: stretch;
+  min-height: stretch;
+  position:static;
 }
+
+    .headerCal {
+        text-align: center;
+      }
+
+      .inputCal {
+      align-content: center;
+      text-align: center;
+      }
+        input {
+          display: relative;
+          width: 40%;
+      }
+
+      .add-event {
+        margin: 10px 0 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #ffffea;
+      }
+  .calendar-element {
+    max-height: 65%;
+    max-width:  90%;
+    margin: auto;
+    overflow-y: visible;
+  }
+    .rbc-btn-group {
+      background-color: lighten($color: #ade8f4, $amount: 8);
+    }
+
+    .rbc-header {
+      background-color: lighten($color: #ffc8dd, $amount: 8);
+    }
+
+    .rbc-agenda-group {
+      background-color: lighten($color: #ade8f4, $amount: 8);
+      max-height: 65%;
+    }
+
+    .rbc-time-view {
+      background-color: lighten($color: #ffffea, $amount: 1.5);
+      max-height: 65%;
+    }
+
+    .rbc-month-row {
+      background-color: lighten($color: #ffffea, $amount: 1.5);
+      max-height: 65%;
+      z-index: 0;
+    }
+  }

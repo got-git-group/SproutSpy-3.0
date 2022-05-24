@@ -47,31 +47,38 @@ const MyCalendar= ()=> {
     setAllEvents([...allEvents, newEvent])
   }
 
+
   return (
-    <div className="calendar-container">
-      <h1>Calendar</h1>
-      <h2>Add New Event</h2>
-      <div>
-        <input 
-        type="text" placeholder="Title" value={newEvent.title} onChange={(e)=> setNewEvent({...newEvent, title: e.target.value})}
+    
+      <div className="calendarImage" id='imageCal'>
+        <header className='headerCal'>
+          <h1>Calendar</h1>
+          <h2>Add New Event</h2>
+        </header>
+        <div className='inputCal'>
+          <div>
+            <input 
+            type="text" placeholder="Title" value={newEvent.title} onChange={(e)=> setNewEvent({...newEvent, title: e.target.value})}
+            />
+            <DatePicker className="start-date" placehoderText="Start Date"
+            selected={newEvent.start} onChange={(start) => setNewEvent({...newEvent, start})}
+            />  
+            <DatePicker className="end-date" placehoderText="End Date"
+            selected={newEvent.end} onChange={(end) => setNewEvent({...newEvent, end})}
+            />
+            <button className="add-event" onClick={handleAddEvent}>Add Event</button>
+          </div>
+        </div>
+
+        <Calendar 
+        localizer={localizer} 
+        events={allEvents} 
+        startAccessor="start" 
+        endAccessor="end" 
+        className="calendar-element"
         />
-        <DatePicker className="start-date" placehoderText="Start Date"
-        selected={newEvent.start} onChange={(start) => setNewEvent({...newEvent, start})}
-        />  
-        <DatePicker className="end-date" placehoderText="End Date"
-        selected={newEvent.end} onChange={(end) => setNewEvent({...newEvent, end})}
-        />
-        <button className="add-event" onClick={handleAddEvent}>Add Event</button>
       </div>
-      <Calendar 
-      localizer={localizer} 
-      events={allEvents} 
-      startAccessor="start" 
-      endAccessor="end" 
-      className="calendar-element"
-      />
-    </div>
-  );
+  )
 }
 
 export default MyCalendar;
