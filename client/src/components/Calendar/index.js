@@ -50,9 +50,7 @@ const MyCalendar= ()=> {
 
 
   return (
-    // <div style={{ 
-    //   backgroundImage: {bg} 
-    // }} className=''></div>
+    <>
       <div className="calendar-container">
         <header className='headerCal'>
           <h1>Calendar</h1>
@@ -81,6 +79,7 @@ const MyCalendar= ()=> {
         className="calendar-element"
         />
       </div>
+    </>
   );
 }
 

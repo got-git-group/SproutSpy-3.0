@@ -1,7 +1,6 @@
 .calendar-container {
-  width: stretch;
-  height: stretch;
-  margin: 0 50px 0 50px;
+  min-width: stretch;
+  min-height: stretch;
 
     .headerCal {
         text-align: center;
@@ -14,7 +13,6 @@
         input {
           display: relative;
           width: 40%;
-          z-index: 1;
       }
 
       .add-event {
@@ -23,19 +21,13 @@
     }
 
   .calendar-element {
-    height: 65%;
-    width: 100%;
+    max-height: 70%;
+    max-width:  90%;
+    overflow-y: visible;
+    margin:auto;
 
     .rbc-month-row {
-      display: relative;
       z-index: -1;
     }
   }
-
-  // .backgroundImage {
-  //   min-height: 100%;
-  //   min-width: 100%;
-  //   opacity: 0.5;
-  //   z-index: -1;
-  // }
 }
