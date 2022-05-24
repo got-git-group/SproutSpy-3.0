@@ -50,7 +50,7 @@ const MyCalendar= ()=> {
 
   return (
     
-      <div className="calendar-container">
+      <div className="calendarImage" id='imageCal'>
         <header className='headerCal'>
           <h1>Calendar</h1>
           <h2>Add New Event</h2>
@@ -78,8 +78,7 @@ const MyCalendar= ()=> {
         className="calendar-element"
         />
       </div>
-    // </div>
-  );
+  )
 }
 
 export default MyCalendar;
