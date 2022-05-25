@@ -6,7 +6,7 @@ import LogoutButton from '../LogoutButton';
 const Nav = () => {
   const { isAuthenticated } = useAuth0();
   const loggedIn = isAuthenticated;
-  console.log(loggedIn);
+
     return (
         <>
             <nav className='nav'>

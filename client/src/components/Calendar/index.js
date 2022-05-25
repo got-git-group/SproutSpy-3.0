@@ -8,6 +8,8 @@ import getDay from 'date-fns/getDay';
 import React, { useState } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Loading from '../../utils/loading';
+import { withAuthenticationRequired } from '@auth0/auth0-react';
 
 const locales = {
   "en-US": require('date-fns/locale/en-US'),
@@ -81,4 +83,4 @@ const MyCalendar= ()=> {
   )
 }
 
-export default MyCalendar;
+export default withAuthenticationRequired(MyCalendar, { onRedirecting: () => <Loading /> });
