@@ -1,0 +1,41 @@
+.content-area {
+  min-width: 100%;
+}
+
+#plantFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+  column-gap: 10px;
+  width: 90vw;
+  margin: auto;
+}
+
+.plantCard {
+  margin: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 25%;
+  background-color: #ffd1dc;
+  padding: 20px;;
+}
+
+.plantCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.plantName {
+  text-align: center;
+}
+
+.plantImage {
+  width: 100%;
+  height: auto;
+}
+
+.plantDetails {
+  line-height: 1.5;
+}

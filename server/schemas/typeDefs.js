@@ -20,10 +20,11 @@ const typeDefs = gql`
   }
 
   type Query {
-    plants: [Plant]
+    plant: [Plant]
     zones: [Zone]
     getPlantsByZone(zoneId: ID!): [Plant]
     getRecommendedPlants(zoneId: ID!): [Plant]
+    getNonRecommendedPlants(zoneId: ID!): [Plant]
   }
 `;
 

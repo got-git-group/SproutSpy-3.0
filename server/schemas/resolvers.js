@@ -2,7 +2,7 @@ const { Plant, Zone } = require('../models');
 
 const resolvers = {
   Query: {
-    plants: async () => {
+    plant: async () => {
       return await Plant.find({})
     },
     zones: async () => {
@@ -14,7 +14,11 @@ const resolvers = {
     getRecommendedPlants: async (_, { zoneId }) => {
       const results = await Plant.find({zones: { $in : [zoneId]} })
       return results.filter(plant => plant.recommended === true)
-    }
+    },
+    getNonRecommendedPlants: async (_, { zoneId }) => {
+      const results = await Plant.find({zones: { $in : [zoneId]} })
+      return results.filter(plant => plant.recommended === false)
+    },
   },
   // Mutation: {
 

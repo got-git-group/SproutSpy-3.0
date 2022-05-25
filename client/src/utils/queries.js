@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
 export const QUERY_PLANTS = gql`
-  query plants {
+  query plant {
     plants {
       _id
       plantName
@@ -11,7 +11,7 @@ export const QUERY_PLANTS = gql`
       sunlight
       indoorStartCalc
       outdoorStartCalc
-      zones [Zone]
+      zones
       recommended
     }
   }
@@ -37,15 +37,15 @@ export const QUERY_PLANTS_BY_ZONE = gql`
       sunlight
       indoorStartCalc
       outdoorStartCalc
-      zones [Zone]
+      zones
       recommended
     }
   }
 `;
 
 export const QUERY_RECOMMENDED_PLANTS = gql`
-  query getRecommendedPlants($zoneId: ID!) {
-    getRecommendedPlants(zoneId: $zoneId) {
+  query getPlants($zoneId: ID!) {
+    recommendedPlants: getRecommendedPlants(zoneId: $zoneId) {
       _id
       plantName
       spacing
@@ -54,8 +54,37 @@ export const QUERY_RECOMMENDED_PLANTS = gql`
       sunlight
       indoorStartCalc
       outdoorStartCalc
-      zones [Zone]
+      zones {_id}
+      recommended
+    }
+    nonRecommendedPlants: getNonRecommendedPlants(zoneId: $zoneId) {
+      _id
+      plantName
+      spacing
+      seedDepth
+      plantImg
+      sunlight
+      indoorStartCalc
+      outdoorStartCalc
+      zones {_id}
       recommended
     }
   }
 `;
+
+// export const QUERY_NON_RECOMMENDED_PLANTS = gql`
+//   query getNonRecommendedPlants($zoneId: ID!) {
+//     getNonRecommendedPlants(zoneId: $zoneId) {
+//       _id
+//       plantName
+//       spacing
+//       seedDepth
+//       plantImg
+//       sunlight
+//       indoorStartCalc
+//       outdoorStartCalc
+//       zones
+//       recommended
+//     }
+//   }
+// `;
