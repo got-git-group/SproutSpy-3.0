@@ -1,18 +1,28 @@
-.card-img-top  {
-  object-fit: cover;
-  text-align: center;
-  width:  200px;
-  height: 200px;
-  margin: 20px;
-	padding: 10px;
-}
-
-.card {
+#glossary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+  column-gap: 10px;
+  width: 90vw;
+  margin: auto;
   background-color: skyblue;
-  text-align: center;
-	margin: 20px;
-	padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 5px; 
 }
 
+.glossCard {
+  text-align: center;
+	margin: 20px;
+	padding: 20px;
+  border-bottom: solid 2px #ffd1dc;
+}
+
+.glossImage  {
+  width: 100%;
+  border-radius: 5px; 
+}
+
+.glossText {
+  line-height: 1.5;
+}
