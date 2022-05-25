@@ -1,16 +1,13 @@
 .card-img-top  {
   object-fit: cover;
+  text-align: center;
   width:  200px;
   height: 200px;
+  margin: 20px;
+	padding: 10px;
 }
 
-.col {
-  flex: 50%;
-  float: left;
-}  
-
 .card {
-  display: flex;
   background-color: skyblue;
   text-align: center;
 	margin: 20px;
