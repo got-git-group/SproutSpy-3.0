@@ -2,12 +2,13 @@ import React from "react";
 import './index.scss';
 const loadingImg =
   "https://cdn.auth0.com/blog/auth0-react-sample/assets/loading.svg";
-
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet"></link>
+    
 const Loading = () => (
   <div className="spinner">
-    <p className='font'>GOT</p>
+    <p className='logo-1'>GOT</p>
     <img src={loadingImg} alt="Loading..." />
-    <p className='font'>GIT</p>
+    <p className='logo-1'>GIT</p>
   </div>
 );
 
