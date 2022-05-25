@@ -1,46 +1,28 @@
-$assetPath :"/assets/images";
-#imageGloss {
-  background-image: url(#{$assetPath}/glossary.jpg);
-  min-width: 100%;
-  min-height: 100%;
-  background-size: contain;
+#glossary {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+  column-gap: 10px;
+  width: 90vw;
+  margin: auto;
+  background-color: skyblue;
+  border-radius: 5px; 
 }
 
-.rows {
-  margin: auto;
+.glossCard {
+  text-align: center;
+	margin: 20px;
+	padding: 20px;
+  border-bottom: solid 2px #ffd1dc;
+}
 
+.glossImage  {
+  width: 100%;
+  border-radius: 5px; 
+}
 
-  .card-img-top  {
-    object-fit: cover;
-    width:  95%;
-    height: 200px;
-    align-self: center;
-  }
-
-  .col {
-    flex-direction:column-reverse;
-    flex-wrap: wrap;
-    box-sizing: content-box;
-    background-color: skyblue;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-  }
-
-  .card {
-    flex-direction:column-reverse;
-    flex-wrap: wrap;
-    box-sizing: content-box;
-    background-color: skyblue;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px; 
-    }
-  }
-
-
+.glossText {
+  line-height: 1.5;
+}
