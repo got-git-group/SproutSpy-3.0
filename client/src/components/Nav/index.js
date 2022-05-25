@@ -6,7 +6,7 @@ import LogoutButton from '../LogoutButton';
 const Nav = () => {
   const { isAuthenticated } = useAuth0();
   const loggedIn = isAuthenticated;
-  console.log(loggedIn);
+
     return (
         <>
             <nav className='nav'>
@@ -29,6 +29,9 @@ const Nav = () => {
                     { !loggedIn && <li className='itemnavlog'>
                         <LoginButton />
                     </li> }
+                    {/* { loggedIn && <li className='itemnavlog'>
+                        <img src={picture} alt='profile' className='profile' />
+                    </li> } */}
                 </ul>
 
                 {/* <div className='hamburger'>
