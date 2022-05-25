@@ -29,9 +29,6 @@ const Nav = () => {
                     { !loggedIn && <li className='itemnavlog'>
                         <LoginButton />
                     </li> }
-                    {/* { loggedIn && <li className='itemnavlog'>
-                        <img src={picture} alt='profile' className='profile' />
-                    </li> } */}
                 </ul>
 
                 {/* <div className='hamburger'>
