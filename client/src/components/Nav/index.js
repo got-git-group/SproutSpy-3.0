@@ -15,13 +15,13 @@ const Nav = () => {
                         <a href='/'>Home</a>
                     </li>
                     <li className='itemnav'>
-                        <a href='/glossary'>Glossary</a>
+                        <a href='/glossary' className='miniOff'>Glossary</a>
                     </li>
                     {loggedIn && <li className='itemnav'>
-                        <a href='/addplant'>Add Plant</a>
+                        <a href='/addplant' className='miniOff'>Add Plant</a>
                     </li> }
                     {loggedIn && <li className='itemnav'>
-                        <a href='/calendar'>Calendar</a>
+                        <a href='/calendar' className='miniOff'>Calendar</a>
                     </li> }
                     { loggedIn && <li className='itemnavlog'>
                         <LogoutButton />

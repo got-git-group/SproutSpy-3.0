@@ -1,12 +1,11 @@
 import React from "react";
-import bg from "../../assets/images/glossary.jpg";
 import './index.scss';
 
 const Glossary = () => {
     return (
 
         <>
-        <div style={{ backgroundImage: `url(${bg})` }}></div>
+        <div className="glossaryImage" id='imageGloss'>
             <div className="rows">
                 <div className="col">
                     <div className="card">
@@ -92,7 +91,8 @@ const Glossary = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
+    </>
     )
 }
 
