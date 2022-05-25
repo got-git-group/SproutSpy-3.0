@@ -1,0 +1,21 @@
+.card-img-top  {
+  object-fit: cover;
+  width:  200px;
+  height: 200px;
+}
+
+.col {
+  flex: 50%;
+  float: left;
+}  
+
+.card {
+  display: flex;
+  background-color: skyblue;
+  text-align: center;
+	margin: 20px;
+	padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px; 
+}
+
