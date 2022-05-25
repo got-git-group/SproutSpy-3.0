@@ -5,7 +5,9 @@ const loadingImg =
 
 const Loading = () => (
   <div className="spinner">
+    <p className='font'>GOT</p>
     <img src={loadingImg} alt="Loading..." />
+    <p className='font'>GIT</p>
   </div>
 );
 
