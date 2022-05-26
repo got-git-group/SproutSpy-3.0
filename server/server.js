@@ -1,4 +1,3 @@
-// I took this boilerplate from the MERN week mini-project
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');

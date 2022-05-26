@@ -29,6 +29,8 @@ const Plants = ( { plants } ) => {
                         </ul>
                     </div>
                 ))}
+                {/* add plant to calendar button */}
+                {/* Edit/Delete Plant */}
             </section>
         </div>
     )
