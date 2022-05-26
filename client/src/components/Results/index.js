@@ -7,7 +7,7 @@ import Plants from '../Plants';
 
 const Results = () => {
     // will need to pass in the zoneID to these queries
-    const { data } = useQuery(QUERY_RECOMMENDED_PLANTS, {variables: {zoneId: '628dad52e0fd361cc562d5c2'}});
+    const { loading, error, data } = useQuery(QUERY_RECOMMENDED_PLANTS, {variables: {zoneId: '628dad52e0fd361cc562d5c2'}});
     console.log(data);
     if (!data) {
         return <p>No data</p>;
