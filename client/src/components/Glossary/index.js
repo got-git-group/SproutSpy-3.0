@@ -1,11 +1,12 @@
 import React from "react";
-import bg from "../../assets/images/glossary.jpg";
+import bg from '../../assets/images/glossary.jpg'
 import './index.scss';
 const glossaryData = require('./glossary.json');
 
 const Glossary = () => {
     // can we make a conditional that if there are bullet values then they generate in the card?
     return (
+        
         <div id="glossary">
             {glossaryData.map((item) => (
                 <div class="glossCard">
