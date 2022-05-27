@@ -29,7 +29,7 @@ const plantSchema = new Schema(
     zones: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Zone'
+        ref: 'zone'
       }
     ],
     recommended: {
