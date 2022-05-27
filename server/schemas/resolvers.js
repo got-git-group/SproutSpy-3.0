@@ -26,7 +26,7 @@ const resolvers = {
   },
   Mutation: {
     addPlant: async (parent, { plantName, spacing, seedDepth, plantImg, sunlight, indoorStartCalc, outdoorStartCalc, zones, recommended }, context) => {
-      if (context.user) {
+      // if (context.user) {
         const newPlant = await Plant.create({
           plantName,
           spacing,
@@ -39,20 +39,20 @@ const resolvers = {
           recommended
         });
         return newPlant;
-      }
-      throw new AuthenticationError('You need to be logged in!');
+      // }
+      // throw new AuthenticationError('You need to be logged in!');
     },
     removePlant: async (parent, { plantId }, context) => {
-      if (context.user) {
+      // if (context.user) {
         const plant = await Plant.findOneAndDelete({
           _id: plantId
         });
         return plant;
-      }
-    throw new AuthenticationError('You need to be logged in!');
+    //   }
+    // throw new AuthenticationError('You need to be logged in!');
     },
     updatePlant: async (parent, { plantId, plantName, spacing, seedDepth, plantImg, sunlight, indoorStartCalc, outdoorStartCalc, zones, recommended }, context) => {
-      if (context.user) {
+      // if (context.user) {
         const updatedPlant = await Plant.findOneAndUpdate({
           _id: plantId
         }, {
@@ -69,8 +69,8 @@ const resolvers = {
           new: true
         });
         return updatedPlant;
-      }
-      throw new AuthenticationError('You need to be logged in!');
+      // }
+      // throw new AuthenticationError('You need to be logged in!');
     }
   },
 };
