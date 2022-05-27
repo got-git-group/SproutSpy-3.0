@@ -17,8 +17,8 @@ export const UPDATE_PLANT = gql`
 `;
 
 export const ADD_PLANT = gql`
-  mutation addPlant($plantId: ID!) {
-    addPlant($plantId: ID) {
+  mutation addPlant($plantName: String!) {
+    addPlant($plantName: String!) {
       plantName
       spacing
       seedDepth

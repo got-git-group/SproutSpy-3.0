@@ -1,10 +1,11 @@
 const { Plant, Zone } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
+const mongoose = require('mongoose');
 
 const resolvers = {
   Query: {
     plant: async () => {
-      return await Plant.find({})
+      return await Plant.find({}).populate('zones');
     },
     zones: async () => {
       return await Zone.find({})
@@ -27,7 +28,7 @@ const resolvers = {
   Mutation: {
     addPlant: async (parent, { plantName, spacing, seedDepth, plantImg, sunlight, indoorStartCalc, outdoorStartCalc, zones, recommended }, context) => {
       // if (context.user) {
-        const newPlant = await Plant.create({
+        const newPlant = new Plant({
           plantName,
           spacing,
           seedDepth,
@@ -35,10 +36,10 @@ const resolvers = {
           sunlight,
           indoorStartCalc,
           outdoorStartCalc,
-          zones,
           recommended
         });
-        return newPlant;
+        const updatedPlant = await newPlant.save();
+        return await Plant.findOneAndUpdate({ _id: updatedPlant._id }, { $push: { zones: { $each: zones } } }, { new: true })
       // }
       // throw new AuthenticationError('You need to be logged in!');
     },
@@ -63,12 +64,12 @@ const resolvers = {
           sunlight,
           indoorStartCalc,
           outdoorStartCalc,
-          zones,
           recommended
         }, {
           new: true
         });
-        return updatedPlant;
+        const zoneUpdate = await updatedPlant.save();
+        return await Plant.findOneAndUpdate({ _id: zoneUpdate._id }, { $push: { zones: { $each: zones } } }, { new: true })
       // }
       // throw new AuthenticationError('You need to be logged in!');
     }
