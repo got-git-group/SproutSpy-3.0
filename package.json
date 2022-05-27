@@ -4,7 +4,8 @@
   "description": "A gardening app for beginners",
   "main": "server/server.js",
   "scripts": {
-    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    // "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "start": "npx run concurrently \"cd server && npm start\" \"cd client && npm start\"",
     "client": "cd client && npm start",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
