@@ -1,6 +1,6 @@
 # Sprout Spy 3.0
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)(https://sprout-spy.herokuapp.com/)]
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://sprout-spy.herokuapp.com/)
 
 ## Table of contents
 * [General info](#general-info)
