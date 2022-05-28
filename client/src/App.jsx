@@ -1,10 +1,10 @@
+import './styles/index.sass'
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { useAuth0 } from '@auth0/auth0-react';
 import Loading from './utils/loading';
 // import { setContext } from '@apollo/client/link/context';
-
 import Layout from './components/Layout';
 import Home from './components/Home';
 import AddPlant from './components/AddPlant';

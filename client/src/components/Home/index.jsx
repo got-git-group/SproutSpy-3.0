@@ -1,5 +1,5 @@
 import bg from '../../assets/images/projectPhoto.jpg';
-import './index.scss'
+import './index.sass'
 
 const Home = () => {
     return (
