@@ -1,0 +1,40 @@
+.header 
+    display: flex
+    height: 45px
+    position: fixed
+    width: stretch
+    background-color: #ffd1dc
+    justify-content: space-between
+    align-items: center
+    border-radius: 0 0 35px 35px
+    font-size: 18px
+    z-index: 1
+    margin: 0
+  
+
+        h1:
+            color: #2c8b71
+            padding-left: 15px
+            margin: 0
+
+
+$threeTwenty: 500px
+
+@media (max-width: $threeTwenty) 
+     .header
+        position: absolute
+        right: 0
+        bottom: 50%
+        display: flex
+        flex-direction: column
+
+        .header
+            display: none
+                
+
+
+    
+    
+  
+
+
