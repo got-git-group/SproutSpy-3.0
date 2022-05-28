@@ -1,5 +1,4 @@
 import React from "react";
-import bg from '../../assets/images/glossary.jpg'
 import './index.scss';
 const glossaryData = require('./glossary.json');
 
