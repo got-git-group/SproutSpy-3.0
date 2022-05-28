@@ -5,12 +5,13 @@ import { useQuery } from '@apollo/client';
 import { QUERY_RECOMMENDED_PLANTS } from '../../utils/queries';
 import Plants from '../Plants';
 
-const Results = () => {
+const Results = ( { zones }) => {
     // will need to pass in the zoneID to these queries
-    const { loading, error, data } = useQuery(QUERY_RECOMMENDED_PLANTS, {variables: {zoneId: '628dad52e0fd361cc562d5c2'}});
+    console.log(zones);
+    const { loading, error, data } = useQuery(QUERY_RECOMMENDED_PLANTS, {variables: {zoneId: '629280eaf1afa589544b3656'}});
     console.log(data);
     if (!data) {
-        return <p>No data</p>;
+        return <p>Loading...</p>;
     }
     return (
         <div>

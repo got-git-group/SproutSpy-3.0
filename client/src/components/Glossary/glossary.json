@@ -1,35 +1,17 @@
 [
   {
-    "title": "Starts/Cuttings",
-    "text": "Juvenile plants, typically purchased from a nursery or garden store. A nursery has already done the work of getting the seeds to sprout in a greenhouse and getting the plant old enough to survive being transplanted outside",
-    "image": "https://www.mygardenlife.com/uploads/2020/02/lead_pilea%20starts_shutterstock_1203955741.jpg",
-    "bullet1": null,
-    "bullet2": null,
-    "bullet3": null,
-    "bullet4": null
-  },
-  {
-    "title": "Transplant",
-    "text": "When a start or cutting is removed from its smaller container and planted into a garden bed or larger container. When transplanting, dig a hole for the plant a bit deeper than the smaller container you will remove the plant from. While holding your start over the hole, turn the start upside down and gently shake or squeeze the pot to remove the start. Place your start gently in the hole being careful now to smash the roots. Use soil to fill in around the plant, adding a bit more around the stem to bring the soil level higher than it previously was.",
-    "image": "https://mobileimages.lowes.com/marketingimages/713a0fb4-2107-467c-a96d-85d6d74cfe8a/DP18-127272-NPC-HT-ST-Step4.jpg",
-    "bullet1": null,
-    "bullet2": null,
-    "bullet3": null,
-    "bullet4": null
+    "title": "Sunlight",
+    "text": "Different plants require different amounts of light during the day to grow, this information can typically be found on a seedpack or plant tag. These times refer to how many hours the sun is shining directly on the plant, not how many hours of daylight in a day.",
+    "image": "https://thepracticalplanter.com/wp-content/uploads/2019/06/Plant-in-Sunlight.jpg",
+    "bullet1": "Full Sun: 6 or more hours of direct sunlight per day.",
+    "bullet2": "Partial Sun: 4 to 6 hours of direct sunlight per day, including some afternoon sun.",
+    "bullet3": "Partial Shade: 4 to 6 hours of direct sunlight per day, mostly before midday.",
+    "bullet4": "Full Shade: Less than 4 hours of direct sunlight per day."
   },
   {
     "title": "Spacing",
     "text": "Spacing refers to the space a plant needs when full grown. Seeds and starts are small, but often grow into mighty plants! Consider planting your starts with as much space between them and other plants as is suggested on the seedpack or plant tag",
     "image": "https://morningchores.com/wp-content/uploads/2020/04/potatoes-with-plenty-of-plant-spacing-800x529.jpg",
-    "bullet1": null,
-    "bullet2": null,
-    "bullet3": null,
-    "bullet4": null
-  },
-  {
-    "title": "Thinning",
-    "text": "Due to seed attrition (not all seeds and starts survive), some plants call for being sown (seeded in the ground) in a higher density than their eventual required spacing, this can lead to thinning. Thinning is the process of removing the less-healthy sprouts around the healthier sprouts, retaining healthy sprouts at the desired spacing for a fully-grown plant.",
-    "image": "https://www.finegardening.com/app/uploads/assets/uploads/posts/3510/kg20-thinning-seedlings-01.jpg",
     "bullet1": null,
     "bullet2": null,
     "bullet3": null,
@@ -45,12 +27,30 @@
     "bullet4": null
   },
   {
-    "title": "Sunlight",
-    "text": "Different plants require different amounts of light during the day to grow, this information can typically be found on a seedpack or plant tag. These times refer to how many hours the sun is shining directly on the plant, not how many hours of daylight in a day.",
-    "image": "https://thepracticalplanter.com/wp-content/uploads/2019/06/Plant-in-Sunlight.jpg",
-    "bullet1": "Full Sun: 6 or more hours of direct sunlight per day.",
-    "bullet2": "Partial Sun: 4 to 6 hours of direct sunlight per day, including some afternoon sun.",
-    "bullet3": "Partial Shade: 4 to 6 hours of direct sunlight per day, mostly before midday.",
-    "bullet4": "Full Shade: Less than 4 hours of direct sunlight per day."
+    "title": "Starts/Cuttings",
+    "text": "Juvenile plants, typically purchased from a nursery or garden store. A nursery has already done the work of getting the seeds to sprout in a greenhouse and getting the plant old enough to survive being transplanted outside",
+    "image": "https://www.mygardenlife.com/uploads/2020/02/lead_pilea%20starts_shutterstock_1203955741.jpg",
+    "bullet1": null,
+    "bullet2": null,
+    "bullet3": null,
+    "bullet4": null
+  },
+  {
+    "title": "Transplant",
+    "text": "When a start or cutting is removed from its smaller container and planted into a garden bed or larger container.",
+    "image": "https://mobileimages.lowes.com/marketingimages/713a0fb4-2107-467c-a96d-85d6d74cfe8a/DP18-127272-NPC-HT-ST-Step4.jpg",
+    "bullet1": null,
+    "bullet2": null,
+    "bullet3": null,
+    "bullet4": null
+  },
+  {
+    "title": "Thinning",
+    "text": "Due to seed attrition (not all seeds and starts survive), some plants call for being sown (seeded in the ground) in a higher density than their eventual required spacing, this can lead to thinning. Thinning is the process of removing the less-healthy sprouts around the healthier sprouts, retaining healthy sprouts at the desired spacing for a fully-grown plant.",
+    "image": "https://www.finegardening.com/app/uploads/assets/uploads/posts/3510/kg20-thinning-seedlings-01.jpg",
+    "bullet1": null,
+    "bullet2": null,
+    "bullet3": null,
+    "bullet4": null
   }
 ]
