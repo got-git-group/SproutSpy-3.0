@@ -1,35 +1,17 @@
-import bg from '../../assets/images/addplant.jpg';
 import './index.scss';
 import { withAuthenticationRequired } from '@auth0/auth0-react';
 import Loading from '../../utils/loading';
-import Select from 'react-select';
 import { useQuery } from '@apollo/client';
 import { QUERY_ZONES } from '../../utils/queries';
 
-// const CustomSelectComponent = ({ value, options, onSelect }) => {
-//     return (
-//       <Select
-//         value={value}
-//         options={options}
-//         isMulti
-//         onChange={onSelect}
-//       />
-//     );
-// };
-
 const AddPlant = () => {
-    // const zones = [];
     const { loading, error, data } = useQuery(QUERY_ZONES);
       console.log(data);
       if (!data) {
           return <p>Loading...</p>;
       };
-    // data.zones.map((zone) => (zones.push({value: zone._id, label: zone.zoneName})));
-
     return (
         <div id="addPlant">
-            {/* <img src={bg} alt='' className='backgroundImage'>
-            </img> */}
             <div id="formWrapper">
                 <form id="plantForm">
                     <h1>Add a Plant to the Database</h1>
