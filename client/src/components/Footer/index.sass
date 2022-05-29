@@ -1,35 +1,21 @@
 .footer 
-    position: fixed
-    bottom: 0
     display: flex
+    height: 45px
+    position: fixed
     width: stretch
-    margin: -30px 1px 0 1px
-    height: 30px
     background-color: #ffd1dc
     justify-content: space-between
     align-items: center
-    border-radius: 25px 25px 0 0
-    z-index: 4
+    border-radius: 0 0 35px 35px
+    font-size: 18px
+    z-index: 1
+    margin: 0
+  
 
-    h1
-        font-size: 18px
-        color: #2c8b71
-        padding-left: 10px
-    
-
-    .link 
-        font-family: 'comfortaa'
-        font-size: 13px
-        color: rgb(177, 50, 177)
-        text-decoration: underline
-        opacity: .6
-    
-
-    .logo 
-        width: 12px
-        height: 12px
-        padding-right: 10px
-    
+        h1:
+            color: #2c8b71
+            padding-left: 15px
+            margin: 0
 
 
 $threeTwenty: 500px
@@ -37,6 +23,7 @@ $threeTwenty: 500px
 @media (max-width: $threeTwenty) 
 
     html
+        overflow-y: scroll
         bottom: 0
         top: 0
         left: 0
@@ -45,32 +32,31 @@ $threeTwenty: 500px
         body
             display: block
             margin: none
-            color: #fff
-            // overflow: contain
+            .glossCard
+                img
+                    display: contain
 
             .footer
                 position: absolute
-                right: 0
+                left: 0
                 top: 0
                 display: block
-                float: left
                 width: 50px
-                height: 100%
+                height: 3115px
                 border-radius: 0
-                
-                h1
-                    display: none
-                    bottom: 0
-
-                    a
-                        display: center
-                        flex-wrap: wrap
-                        font-size: 1%
-                        bottom: 0
-
-                    img
-                        display: none
-                    
-
-        
             
+            header
+                h1
+                    position: absolute
+                    display: block
+                    font-color: (#2c8b71)
+                    top: 0
+                    margin-left: 100px 
+                    padding: 0
+            img
+                display: block
+                width: max-content
+            .logo
+                display: none
+                      
+                        

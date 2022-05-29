@@ -1,12 +1,8 @@
-<<<<<<< HEAD:client/src/components/Home/index.jsx
-import bg from '../../assets/images/projectPhoto.jpg';
 import './index.sass'
-=======
 import './index.scss';
 import React from "react";
 import { useQuery } from '@apollo/client';
 import { QUERY_ZONES } from '../../utils/queries';
->>>>>>> origin:client/src/components/Home/index.js
 
 const Home = () => {
     const { loading, error, data } = useQuery(QUERY_ZONES);
