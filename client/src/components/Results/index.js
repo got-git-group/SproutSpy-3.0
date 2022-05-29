@@ -9,7 +9,7 @@ const Results = (zone) => {
     // will need to pass in the zoneID to these queries
     console.log(zone);
 
-    const { loading, error, data } = useQuery(QUERY_RECOMMENDED_PLANTS, {variables: {zoneId: '629280eaf1afa589544b3656'}});
+    const { loading, error, data } = useQuery(QUERY_RECOMMENDED_PLANTS, {variables: {zoneId: '62927d3c12f2e0903aedeb82'}});
     console.log(data);
     if (!data) {
         return <p>Loading...</p>;
