@@ -72,19 +72,19 @@ export const QUERY_RECOMMENDED_PLANTS = gql`
   }
 `;
 
-// export const QUERY_NON_RECOMMENDED_PLANTS = gql`
-//   query getNonRecommendedPlants($zoneId: ID!) {
-//     getNonRecommendedPlants(zoneId: $zoneId) {
-//       _id
-//       plantName
-//       spacing
-//       seedDepth
-//       plantImg
-//       sunlight
-//       indoorStartCalc
-//       outdoorStartCalc
-//       zones
-//       recommended
-//     }
-//   }
-// `;
+export const QUERY_SINGLE_PLANT = gql`
+  query getSinglePlant($plantId: ID!) {
+    plant(plantId: $plantId) {
+      _id
+      plantName
+      spacing
+      seedDepth
+      plantImg
+      sunlight
+      indoorStartCalc
+      outdoorStartCalc
+      zones
+      recommended
+    }
+  }
+`;
