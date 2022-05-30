@@ -73,8 +73,8 @@ export const QUERY_RECOMMENDED_PLANTS = gql`
 `;
 
 export const QUERY_SINGLE_PLANT = gql`
-  query getSinglePlant($plantId: ID!) {
-    plant(plantId: $plantId) {
+  query GetSinglePlant($plantId: ID!) {
+    getSinglePlant(plantId: $plantId) {
       _id
       plantName
       spacing
@@ -83,7 +83,6 @@ export const QUERY_SINGLE_PLANT = gql`
       sunlight
       indoorStartCalc
       outdoorStartCalc
-      zones
       recommended
     }
   }

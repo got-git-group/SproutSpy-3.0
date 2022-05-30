@@ -29,7 +29,7 @@ const typeDefs = gql`
     getPlantsByZone(zoneId: ID!): [Plant]
     getRecommendedPlants(zoneId: ID!): [Plant]
     getNonRecommendedPlants(zoneId: ID!): [Plant]
-    getSinglePlant(plantId: ID!): [Plant]
+    getSinglePlant(plantId: ID!): Plant
   }
 
   type Mutation {

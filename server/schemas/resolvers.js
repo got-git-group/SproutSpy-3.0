@@ -22,7 +22,7 @@ const resolvers = {
       return results.filter(plant => plant.recommended === false)
     },
     getSinglePlant: async (parent, { plantId }) => {
-      return await Plant.findOne({ _id: plantId })
+      return await Plant.findById(plantId)
     }
   },
   Mutation: {

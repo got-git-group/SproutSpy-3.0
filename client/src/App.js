@@ -11,6 +11,7 @@ import AddPlant from './components/AddPlant';
 import Glossary from './components/Glossary';
 import MyCalendar from './components/Calendar';
 import Results from './components/Results';
+import SinglePlant from './components/SinglePlant';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -33,6 +34,7 @@ function App() {
           <Route path="glossary" element={ <Glossary /> } />
           <Route path="calendar" element={ <MyCalendar /> } />
           <Route path="results/:zoneId" element={ <Results /> } />
+          <Route path="plants/:plantId" element={ <SinglePlant /> } />
         </Route>
       </Routes>
     </ApolloProvider>
