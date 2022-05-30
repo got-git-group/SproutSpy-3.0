@@ -11,6 +11,11 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  context: ({ req }) => { 
+    const token = req.headers.authorization || '';
+    console.log(token);
+    return { token };
+  }
 });
 // middleware - ADD AUTH HERE?
 app.use(express.urlencoded({ extended: false }));
