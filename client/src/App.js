@@ -32,7 +32,7 @@ function App() {
           <Route path="addplant" element={ <AddPlant /> } />
           <Route path="glossary" element={ <Glossary /> } />
           <Route path="calendar" element={ <MyCalendar /> } />
-          <Route path="results" element={ <Results /> } />
+          <Route path="results/:zoneId" element={ <Results /> } />
         </Route>
       </Routes>
     </ApolloProvider>
