@@ -5,9 +5,12 @@ import LoginButton from '../LoginButton';
 import LogoutButton from '../LogoutButton';
 
 const Nav = () => {
+  let picture = '';
   const { isAuthenticated, user } = useAuth0();
-  const { picture } = user;
   const loggedIn = isAuthenticated;
+  if ( loggedIn ) {
+     picture = user.picture;
+  }
 
   const navigate = useNavigate();
 
