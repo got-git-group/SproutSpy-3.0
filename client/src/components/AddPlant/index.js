@@ -11,19 +11,41 @@ const AddPlant = () => {
     const { loading, error, data } = useQuery(QUERY_ZONES);
 
     const [addPlant] = useMutation(ADD_PLANT);
-    const [formState, setFormState] = useState({ plantName: null, spacing: null, sunlight: "Full Sun", seedDepth: null, plantImg: null, indoorStartCalc: null, outdoorStartCalc: null, zones: [] });
+    const [formState, setFormState] = useState(
+        { 
+            plantName: null, 
+            spacing: null, 
+            sunlight: "Full Sun", 
+            seedDepth: null, 
+            plantImg: null, 
+            indoorStartCalc: null, 
+            outdoorStartCalc: null, 
+            zones: [] 
+        });
     const handleChange = (event) => {
         const { name, value } = event.target;
 
-        setFormState({...formState, [name]: value});
+        setFormState({...formState, [name]: !isNaN(parseInt(value)) ? parseInt(value) : value});
+        console.log(formState, 'on change');
+    };
+
+    const handleSelect = (event) => {
+        const select = event.target;
+        const selected = [...select.options].filter(op=>op.selected).map(op=>op.value);
+        console.log(selected);
+        const name = select.name;
+        setFormState({...formState, [name]: selected});
         console.log(formState, 'on change');
     };
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-
-        addPlant( {variables: { ...formState } } );
-        console.log(formState, 'on submit');
+        try {
+            await addPlant( {variables: { ...formState } } );
+            console.log(formState, 'on submit');
+        } catch (error) {
+            console.log(error)
+        }
     };
     
     // this is for the QUERY_ZONES but dropped down here b/c returns have to come after mutations
@@ -68,7 +90,7 @@ const AddPlant = () => {
 
                     <div className="inputWrapper">
                         <label for="sunlight">How much sun does the plant need?*</label>
-                        <select id="sunlight" name="sunlight" onChange={handleChange}>
+                        <select id="sunlight" name="sunlight" onChange={handleSelect}>
                             <option value="Full Sun">Full Sun</option>
                             <option value="Partial Sun">Partial Sun</option>
                             <option value="Partial Shade">Partial Shade</option>
@@ -78,7 +100,7 @@ const AddPlant = () => {
 
                     <div className="inputWrapper">
                         <label for="zones">In which zones can this plant grow? (Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.)</label>
-                        <select name="zones" id="zones"  multiple onChange={handleChange}>
+                        <select name="zones" id="zones"  multiple onChange={handleSelect}>
                             {data.zones.map((zone) => (
                                 <option key={zone._id} value={zone._id}>{zone.zoneName}</option>
                             ))}

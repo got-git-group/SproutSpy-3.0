@@ -31,6 +31,8 @@ const resolvers = {
       {
         plantName,
         spacing,
+        seedDepth,
+        plantImg,
         sunlight,
         indoorStartCalc,
         outdoorStartCalc,
@@ -84,7 +86,6 @@ const resolvers = {
         sunlight,
         indoorStartCalc,
         outdoorStartCalc,
-        zones,
       },
       context
     ) => {
@@ -106,12 +107,15 @@ const resolvers = {
           new: true,
         }
       );
-      const zoneUpdate = await updatedPlant.save();
-      return await Plant.findOneAndUpdate(
-        { _id: zoneUpdate._id },
-        { $push: { zones: { $each: zones } } },
-        { new: true }
-      );
+        // if (!zones) {
+          return updatedPlant;
+        // } else if (zones) {
+        //   return await Plant.findOneAndUpdate(
+        //     { _id: updatedPlant._id },
+        //     { $push: { zones: { $each: zones } } },
+        //     { new: true }
+        //   );
+        // }
       // }
       // throw new AuthenticationError('You need to be logged in!');
     },
