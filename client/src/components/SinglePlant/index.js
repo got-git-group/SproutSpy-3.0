@@ -1,6 +1,6 @@
 import "./index.scss";
 import { useQuery, useMutation } from "@apollo/client";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { QUERY_SINGLE_PLANT } from "../../utils/queries";
 import { REMOVE_PLANT } from "../../utils/mutations";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -8,6 +8,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 const SinglePlant = () => {
   const { plantId } = useParams();
   console.log(JSON.stringify(plantId));
+
+  const navigate = useNavigate();
 
   const { isAuthenticated, user } = useAuth0();
   const { loading, error, data } = useQuery(QUERY_SINGLE_PLANT, {
@@ -23,6 +25,7 @@ const SinglePlant = () => {
   const handlePlantDelete = () => {
     console.log('Deleting: ', plantId);
     removePlant({ variables: { plantId: plantId } });
+    navigate(-1);
   }
 
   return (

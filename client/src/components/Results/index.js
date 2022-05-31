@@ -11,7 +11,7 @@ const Results = () => {
     const { zoneId } = useParams();
     console.log(JSON.stringify(zoneId));
 
-    const { loading, error, data } = useQuery(QUERY_RECOMMENDED_PLANTS, {variables: {zoneId: zoneId}});
+    const { loading, error, data } = useQuery(QUERY_RECOMMENDED_PLANTS, {fetchPolicy: "no-cache", variables: {zoneId: zoneId}});
     console.log(data);
     if (!data) {
         return <p>Loading...</p>;
