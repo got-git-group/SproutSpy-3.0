@@ -52,6 +52,7 @@ const resolvers = {
           sunlight,
           indoorStartCalc,
           outdoorStartCalc,
+          // Hard coded default value for recommended to false
           recommended: false,
         });
         if (!zones) {
