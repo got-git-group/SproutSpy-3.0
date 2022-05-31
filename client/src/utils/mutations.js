@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const UPDATE_PLANT = gql`
   mutation updatePlant($plantId: ID!) { 
-    updatePlant($plantId: ID) {
+    updatePlant(plantName: $plantName) {
       plantName
       spacing
       seedDepth
@@ -11,14 +11,13 @@ export const UPDATE_PLANT = gql`
       indoorStartCalc
       outdoorStartCalc
       zones
-      recommended
     }
   }
 `;
 
 export const ADD_PLANT = gql`
-  mutation addPlant($plantName: String!) {
-    addPlant($plantName: String!) {
+  mutation addPlant($plantName: String!, $sunlight: String!, $spacing: String!) {
+    addPlant(plantName: $plantName, spacing: $spacing, sunlight: $sunlight) {
       plantName
       spacing
       seedDepth
@@ -27,7 +26,6 @@ export const ADD_PLANT = gql`
       indoorStartCalc
       outdoorStartCalc
       zones
-      recommended
     }
   }
 `;
