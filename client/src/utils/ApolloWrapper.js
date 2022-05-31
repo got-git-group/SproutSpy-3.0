@@ -1,39 +1,52 @@
-import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@apollo/client";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  HttpLink,
+} from "@apollo/client";
 import { setContext } from "@apollo/link-context";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useState } from "react";
 
 const ApolloWrapper = ({ children }) => {
-  const { isAuthenticated, getAccessTokenSilently } = useAuth0();
+  const { isAuthenticated, getAccessTokenSilently, getAccessTokenWithPopup } =
+    useAuth0();
   const [bearerToken, setBearerToken] = useState("");
-
   useEffect(() => {
+    let token = "";
     const getToken = async () => {
-      const token = isAuthenticated ? await getAccessTokenSilently(
-        {
-          audience: process.env.REACT_APP_AUTH0_AUDIENCE,
+      if (isAuthenticated) {
+        try {
+          token = await getAccessTokenSilently({
+            audience: process.env.REACT_APP_AUTH0_AUDIENCE,
+            scope: "read:all",
+          });
+        } catch (error) {
+          token = await getAccessTokenWithPopup({
+            audience: process.env.REACT_APP_AUTH0_AUDIENCE,
+            scope: "read:all",
+          });
         }
-      ) : "";
+      }
       setBearerToken(token);
-      console.log(token);
     };
     getToken();
-  }, [getAccessTokenSilently, isAuthenticated]);
+  }, [getAccessTokenSilently, getAccessTokenWithPopup, isAuthenticated]);
 
-  const httpLink = createHttpLink({
-    uri: "/graphql"
+  const httpLink = new HttpLink({
+    uri: "/graphql",
   });
 
   const authLink = setContext((_, { headers, ...rest }) => {
-    if (!bearerToken) return { headers, ...rest};
+    if (!bearerToken) return { headers, ...rest };
     console.log(bearerToken);
     return {
       ...rest,
       headers: {
         ...headers,
-        authorization: `Bearer ${bearerToken}`
-      }
-    }
+        authorization: `Bearer ${bearerToken}`,
+      },
+    };
   });
 
   const client = new ApolloClient({

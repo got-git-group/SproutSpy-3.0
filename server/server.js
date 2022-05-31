@@ -24,7 +24,7 @@ const server = new ApolloServer({
       console.error(req.headers.authorization);
     }
 
-    return { ...rest, req, auth: { isAuthenticated}}
+    return { ...rest, req, auth: { isAuthenticated }}
   }
 });
 // middleware - ADD AUTH HERE?
