@@ -1,11 +1,22 @@
 import './index.scss';
 import { useAuth0 } from '@auth0/auth0-react' ;
+import { useNavigate } from 'react-router-dom';
 import LoginButton from '../LoginButton';
 import LogoutButton from '../LogoutButton';
 
 const Nav = () => {
-  const { isAuthenticated } = useAuth0();
+  let picture = '';
+  const { isAuthenticated, user } = useAuth0();
   const loggedIn = isAuthenticated;
+  if ( loggedIn ) {
+     picture = user.picture;
+  }
+
+  const navigate = useNavigate();
+
+  const handleProfileClick = () => {
+    navigate('/');
+  }
 
     return (
         <>
@@ -28,6 +39,9 @@ const Nav = () => {
                     </li> }
                     { !loggedIn && <li className='itemnavlog'>
                         <LoginButton />
+                    </li> }
+                    { loggedIn && <li className='itemnavlog'>
+                        <img src={picture} alt='profile' className='profile' onClick={handleProfileClick} />
                     </li> }
                 </ul>
 

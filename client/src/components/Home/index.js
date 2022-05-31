@@ -3,8 +3,17 @@ import React from "react";
 import { useQuery } from '@apollo/client';
 import { QUERY_ZONES } from '../../utils/queries';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const Home = () => {
+  let username = '';
+  const { isAuthenticated, user } = useAuth0();
+  const loggedIn = isAuthenticated;
+  if ( loggedIn ) {
+    console.log(user);
+     username = user.nickname;
+  }
+
     const { loading, error, data } = useQuery(QUERY_ZONES);
     console.log(data);
     if (!data) {
@@ -14,7 +23,7 @@ const Home = () => {
     return (
         <div id="homePage">
             <form id="zoneSelect">
-                <h1 id="welcome">Welcome!</h1>
+                <h1 id="welcome">Welcome {username}!</h1>
                 <h3 id="choose">Choose your grow zone to get started:</h3>
                 <div className="dropdown">
                     <button className="dropbtn">Zones</button>
