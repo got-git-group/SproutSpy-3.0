@@ -24,18 +24,18 @@ const localizer = dateFnsLocalizer({
 
 const events = [
   {
-    title: 'All Day Event very long title',
+    title: 'Spinach',
     allDay: true,
     start: new Date(2022, 4, 1),
     end: new Date(2022, 4, 2),
   },
   {
-    title: 'Long Event',
+    title: 'Eggplant',
     start: new Date(2022, 4, 7),
     end: new Date(2022, 4, 10),
   },
   {
-    title: 'Other Event',
+    title: 'Carrots',
     start: new Date(2022, 4, 9),
     end: new Date(2022, 4, 10),
   },

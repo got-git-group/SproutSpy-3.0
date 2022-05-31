@@ -45,7 +45,7 @@ const AddPlant = () => {
         event.preventDefault();
         try {
             console.log(formState, 'on submit');
-            await addPlant( {variables: { ...formState } } );
+            await addPlant( {variables: { ...formState } });
             
         } catch (error) {
             console.log(error)
