@@ -1,7 +1,8 @@
 import "./index.scss";
-import { useQuery } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { QUERY_SINGLE_PLANT } from "../../utils/queries";
+import { REMOVE_PLANT } from "../../utils/mutations";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const SinglePlant = () => {
@@ -9,15 +10,21 @@ const SinglePlant = () => {
   console.log(JSON.stringify(plantId));
 
   const { isAuthenticated, user } = useAuth0();
-
   const { loading, error, data } = useQuery(QUERY_SINGLE_PLANT, {
     variables: { plantId: plantId },
   });
+  const [removePlant] = useMutation(REMOVE_PLANT);
   console.log(data);
   if (!data) {
     return <p>Loading...</p>;
   }
   const plantData = data.getSinglePlant;
+
+  const handlePlantDelete = () => {
+    console.log('Deleting: ', plantId);
+    removePlant({ variables: { plantId: plantId } });
+  }
+
   return (
     <div id="singlePlantPage">
       <div id="plantWrapper">
@@ -45,7 +52,7 @@ const SinglePlant = () => {
           )}
           {/* edit will need to link to a form similar to add plant that allow editing of details - we could limit what details can be edited */}
           {isAuthenticated && (
-            <button class="plantBtn" id="deleteBtn" type="submit">
+            <button class="plantBtn" id="deleteBtn" type="submit" onClick={handlePlantDelete}>
               Delete
             </button>
           )}

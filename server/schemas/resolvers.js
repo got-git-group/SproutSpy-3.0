@@ -65,14 +65,13 @@ const resolvers = {
         console.log(err);
       }
     },
-    removePlant: async (parent, { plantId }, context) => {
-      // if (context.user) {
-      const plant = await Plant.findOneAndDelete({
-        _id: plantId,
-      });
-      return plant;
-      //   }
-      // throw new AuthenticationError('You need to be logged in!');
+    removePlant: async (parent, { plantId }, { auth }) => {
+      if (auth.isAuthenticated) {
+        return Plant.findOneAndDelete({
+          _id: plantId
+        });
+      }
+      throw new AuthenticationError("You need to be logged in!");
     },
     updatePlant: async (
       parent,
