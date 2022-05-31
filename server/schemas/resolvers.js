@@ -23,24 +23,36 @@ const resolvers = {
       return results.filter(plant => plant.recommended === false)
     },
     getSinglePlant: async (parent, { plantId }) => {
-      return await Plant.findOne({ _id: plantId })
+      return await Plant.findById(plantId)
     }
   },
   Mutation: {
-    addPlant: async (parent, { plantName, spacing, seedDepth, plantImg, sunlight, indoorStartCalc, outdoorStartCalc, zones, recommended }, context) => {
+    addPlant: async (parent, { plantName, spacing, sunlight, indoorStartCalc, outdoorStartCalc, zones}, context) => {
       // if (context.user) {
-        const newPlant = new Plant({
-          plantName,
-          spacing,
-          seedDepth,
-          plantImg,
-          sunlight,
-          indoorStartCalc,
-          outdoorStartCalc,
-          recommended
-        });
-        const updatedPlant = await newPlant.save();
-        return await Plant.findOneAndUpdate({ _id: updatedPlant._id }, { $push: { zones: { $each: zones } } }, { new: true })
+        try {
+          const newPlant = new Plant({
+            plantName,
+            spacing,
+            seedDepth,
+            plantImg,
+            sunlight,
+            indoorStartCalc,
+            outdoorStartCalc,
+          });
+          if (!zones) {
+            return await newPlant.save();
+          } else if (zones) {
+            const updatedPlant = await newPlant.save();
+            return await Plant.findOneAndUpdate(
+              { _id: updatedPlant._id }, 
+              { $push: { zones: { $each: zones } } }, 
+              { new: true }
+            )
+          }
+        } catch (err) {
+          console.log(err)
+        }
+        
       // }
       // throw new AuthenticationError('You need to be logged in!');
     },
@@ -53,7 +65,7 @@ const resolvers = {
     //   }
     // throw new AuthenticationError('You need to be logged in!');
     },
-    updatePlant: async (parent, { plantId, plantName, spacing, seedDepth, plantImg, sunlight, indoorStartCalc, outdoorStartCalc, zones, recommended }, context) => {
+    updatePlant: async (parent, { plantId, plantName, spacing, seedDepth, plantImg, sunlight, indoorStartCalc, outdoorStartCalc, zones}, context) => {
       // if (context.user) {
         const updatedPlant = await Plant.findOneAndUpdate({
           _id: plantId
@@ -64,8 +76,7 @@ const resolvers = {
           plantImg,
           sunlight,
           indoorStartCalc,
-          outdoorStartCalc,
-          recommended
+          outdoorStartCalc
         }, {
           new: true
         });

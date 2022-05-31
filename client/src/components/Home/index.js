@@ -30,8 +30,7 @@ const Home = () => {
                     <div className="dropdown-content">
                         {data.zones.map((zone) => (
                             <Link key={zone._id} to={{
-                                pathname: '/results',
-                                zone: zone._id
+                                pathname: `/results/${zone._id}`,
                             }}>{zone.zoneName}</Link>
                             // <a href="/results">
                             // {zone.zoneName}</a>

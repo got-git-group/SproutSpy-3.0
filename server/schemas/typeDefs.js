@@ -29,13 +29,13 @@ const typeDefs = gql`
     getPlantsByZone(zoneId: ID!): [Plant]
     getRecommendedPlants(zoneId: ID!): [Plant]
     getNonRecommendedPlants(zoneId: ID!): [Plant]
-    getSinglePlant(plantId: ID!): [Plant]
+    getSinglePlant(plantId: ID!): Plant
   }
 
   type Mutation {
-    addPlant(plantName: String!, spacing: String!, seedDepth: String, plantImg: String, sunlight: String!, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String], recommended: Boolean): Plant
+    addPlant(plantName: String!, spacing: String!, sunlight: String!, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
     removePlant(plantId: ID!): Plant
-    updatePlant(plantId: ID!, plantName: String, spacing: String, seedDepth: String, plantImg: String, sunlight: String, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String], recommended: Boolean): Plant
+    updatePlant(plantId: ID!, plantName: String, spacing: String, seedDepth: String, plantImg: String, sunlight: String, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
   }
 `;
 
