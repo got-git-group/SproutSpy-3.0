@@ -3,8 +3,10 @@ const jwksClient = require('jwks-rsa');
 require('dotenv').config();
 
 const verifyToken = async (token) => {
+  const uri = `${process.env.AUTH0_ISSUER}.well-known/jwks.json`;
+  console.log(uri);
   const client = jwksClient({
-    jwksUri: `${process.env.AUTH0_ISSUER}.well-known/jwks.json`
+    jwksUri: uri,
   });
 
   const getJwksClientKey = ( header, callback ) => {
