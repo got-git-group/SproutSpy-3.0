@@ -8,8 +8,10 @@ const verifyToken = async (token) => {
   });
 
   const getJwksClientKey = ( header, callback ) => {
+    console.log(header);
     client.getSigningKey(header.kid, (err, key) => {
-      const signingKey = key.getPublicKey();
+      console.log(key);
+      const signingKey = key?.getPublicKey();
       callback(null, signingKey);
     });
   }
