@@ -21,10 +21,9 @@ const AddPlant = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-// may need to use something other than formState, like plantName: formState.plantName
+
         addPlant( {variables: { ...formState } } );
         console.log(formState, 'on submit');
-
     };
     
     // this is for the QUERY_ZONES but dropped down here b/c returns have to come after mutations
