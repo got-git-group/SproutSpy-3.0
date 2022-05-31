@@ -1,5 +1,6 @@
 const { Plant, Zone } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
+const withAuth = require('graphql-auth');
 const mongoose = require('mongoose');
 
 const resolvers = {

@@ -1,8 +1,7 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-const isTokenValid = require('./utils/auth');
-
+const verifyToken = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
@@ -11,10 +10,21 @@ const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: async ({ req }) => { 
-    const { authorization: token } = req.headers;
-    console.log(token);
-    console.log(await isTokenValid(token));
+  context: async ({ req, ...rest}) => { 
+    let isAuthenticated = false;
+    try {
+      const authHeader = req.headers.authorization || '';
+      if (authHeader) {
+        const token = authHeader.split(' ')[1];
+        const payload = await verifyToken(token);
+        isAuthenticated = payload && payload.sub ? true : false;
+      }
+    } catch (error) {
+      console.error(error);
+      console.error(req.headers.authorization);
+    }
+
+    return { ...rest, req, auth: { isAuthenticated}}
   }
 });
 // middleware - ADD AUTH HERE?
