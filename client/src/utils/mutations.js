@@ -41,3 +41,21 @@ export const REMOVE_PLANT = gql`
     } 
   }
 `;
+
+export const ADD_USERDATA = gql`
+  mutation addUserData($zone: String!, $springFrost: Date!) {
+    addUserData(zone: $zone, springFrost: $springFrost) {
+      zone
+      springFrost
+    }
+  }
+`;
+
+export const UPDATE_USERDATA = gql`
+  mutation updateUserData($userId: ID!) {
+    updateUserData(userId: $userId) {
+      zone
+      springFrost
+    }
+  }
+`;

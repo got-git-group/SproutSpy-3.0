@@ -1,4 +1,4 @@
-const { Plant, Zone } = require("../models");
+const { Plant, Zone, User } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const mongoose = require("mongoose");
 
@@ -115,6 +115,21 @@ const resolvers = {
       // }
       // throw new AuthenticationError('You need to be logged in!');
     },
+    addUserData: async (parent, { username, zone, springFrost }, { auth }) => {
+      if (!auth.isAuthenticated) {
+        throw new AuthenticationError("You need to be logged in!");
+      }
+      try {
+        const newUser = new User({
+          username,
+          zone,
+          springFrost,
+        });
+        return await newUser.save();
+      } catch (err) {
+        console.log(err);
+      }
+    }
   },
 };
 

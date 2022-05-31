@@ -23,6 +23,13 @@ const typeDefs = gql`
     zoneName: String
   }
 
+  type User {
+    _id: ID
+    username: String
+    zone: Zone
+    springFrost: String
+  }
+
   type Query {
     plant: [Plant]
     zones: [Zone]
@@ -36,6 +43,7 @@ const typeDefs = gql`
     addPlant(plantName: String!, spacing: String!, sunlight: String!, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
     removePlant(plantId: ID!): Plant
     updatePlant(plantId: ID!, plantName: String, spacing: String, seedDepth: String, plantImg: String, sunlight: String, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
+    addUserData(username: String!, zone: String!, springFrost: String!): User
   }
 `;
 
