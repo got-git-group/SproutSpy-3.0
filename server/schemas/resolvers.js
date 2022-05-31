@@ -40,7 +40,7 @@ const resolvers = {
       },
       { auth }
     ) => {
-      if (!isAuthenticated) {
+      if (!auth.isAuthenticated) {
         throw new AuthenticationError("You need to be logged in!");
       }
       try {

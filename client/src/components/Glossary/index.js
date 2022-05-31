@@ -9,10 +9,10 @@ const Glossary = () => {
         
         <div id="glossary">
             {glossaryData.map((item) => (
-                <div class="glossCard">
-                    <h2 class="glossTitle">{item.title}</h2>
-                    <img class="glossImage" src={item.image} alt={item.title}></img>
-                    <p class="glossText">{item.text}</p>
+                <div className="glossCard" key={item.title}>
+                    <h2 className="glossTitle">{item.title}</h2>
+                    <img className="glossImage" src={item.image} alt={item.title}></img>
+                    <p className="glossText">{item.text}</p>
                     {/* <ul>
                         <li>{item.bullet1}</li>
                         <li>{item.bullet2}</li>
