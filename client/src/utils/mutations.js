@@ -51,7 +51,9 @@ export const ADD_PLANT = gql`
       sunlight: $sunlight,
       indoorStartCalc: $indoorStartCalc,
       outdoorStartCalc: $outdoorStartCalc,
-      zones: $zones
+      zones {
+        _id
+      }
       ) {
       plantName
       spacing

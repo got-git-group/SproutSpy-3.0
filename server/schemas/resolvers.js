@@ -54,9 +54,12 @@ const resolvers = {
           outdoorStartCalc,
         });
         if (!zones) {
+          console.log("no zones");
           return await newPlant.save();
         } else if (zones) {
+          console.log("has zones")
           const updatedPlant = await newPlant.save();
+          console.log(updatedPlant);
           return await Plant.findOneAndUpdate(
             { _id: updatedPlant._id },
             { $push: { zones: { $each: zones } } },

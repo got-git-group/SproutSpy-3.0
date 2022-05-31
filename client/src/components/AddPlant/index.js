@@ -41,8 +41,9 @@ const AddPlant = () => {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         try {
-            await addPlant( {variables: { ...formState } } );
             console.log(formState, 'on submit');
+            await addPlant( {variables: { ...formState } } );
+            
         } catch (error) {
             console.log(error)
         }
@@ -90,7 +91,7 @@ const AddPlant = () => {
 
                     <div className="inputWrapper">
                         <label htmlFor="sunlight">How much sun does the plant need?*</label>
-                        <select id="sunlight" name="sunlight" onChange={handleSelect}>
+                        <select id="sunlight" name="sunlight" onChange={handleChange}>
                             <option value="Full Sun">Full Sun</option>
                             <option value="Partial Sun">Partial Sun</option>
                             <option value="Partial Shade">Partial Shade</option>
