@@ -32,10 +32,39 @@ const typeDefs = gql`
     getSinglePlant(plantId: ID!): Plant
   }
 
+  input PlantInput {
+    plantName: String
+    spacing: String
+    seedDepth: String
+    plantImg: String
+    sunlight: String
+    indoorStartCalc: Int
+    outdoorStartCalc: Int
+    zones: [String]
+  }
+
   type Mutation {
-    addPlant(plantName: String!, spacing: String!, sunlight: String!, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
+    addPlant(
+      plantName: String!, 
+      spacing: String!, 
+      seedDepth: String,
+      plantImg: String, 
+      sunlight: String!,
+      indoorStartCalc: Int, 
+      outdoorStartCalc: Int, 
+      zones: [String]
+      ): Plant
     removePlant(plantId: ID!): Plant
-    updatePlant(plantId: ID!, plantName: String, spacing: String, seedDepth: String, plantImg: String, sunlight: String, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
+    updatePlant(
+      plantId: ID!, 
+      plantName: String, 
+      spacing: String, 
+      seedDepth: String, 
+      plantImg: String, 
+      sunlight: String, 
+      indoorStartCalc: Int, 
+      outdoorStartCalc: Int, 
+      ): Plant
   }
 `;
 

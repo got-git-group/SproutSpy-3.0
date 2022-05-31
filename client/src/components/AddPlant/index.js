@@ -11,19 +11,45 @@ const AddPlant = () => {
     const { loading, error, data } = useQuery(QUERY_ZONES);
 
     const [addPlant] = useMutation(ADD_PLANT);
-    const [formState, setFormState] = useState({ plantName: null, spacing: null, sunlight: "Full Sun", seedDepth: null, plantImg: null, indoorStartCalc: null, outdoorStartCalc: null, zones: [] });
+    const [formState, setFormState] = useState(
+        { 
+            plantName: null, 
+            spacing: null, 
+            sunlight: "Full Sun", 
+            seedDepth: null, 
+            plantImg: null, 
+            indoorStartCalc: null, 
+            outdoorStartCalc: null, 
+            zones: [] 
+        });
     const handleChange = (event) => {
         const { name, value } = event.target;
+        let tempValue = value;
+        if (name === 'outdoorStartCalc' || name === 'indoorStartCalc') {
+            tempValue = parseInt(value);
+        }
+        setFormState({...formState, [name]: tempValue});
+        console.log(formState, 'on change');
+    };
 
-        setFormState({...formState, [name]: value});
+    const handleSelect = (event) => {
+        const select = event.target;
+        const selected = [...select.options].filter(op=>op.selected).map(op=>op.value);
+        console.log(selected);
+        const name = select.name;
+        setFormState({...formState, [name]: selected});
         console.log(formState, 'on change');
     };
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-
-        addPlant( {variables: { ...formState } } );
-        console.log(formState, 'on submit');
+        try {
+            console.log(formState, 'on submit');
+            await addPlant( {variables: { ...formState } } );
+            
+        } catch (error) {
+            console.log(error)
+        }
     };
     
     // this is for the QUERY_ZONES but dropped down here b/c returns have to come after mutations
@@ -78,7 +104,7 @@ const AddPlant = () => {
 
                     <div className="inputWrapper">
                         <label htmlFor="zones">In which zones can this plant grow? (Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.)</label>
-                        <select name="zones" id="zones"  multiple onChange={handleChange}>
+                        <select name="zones" id="zones"  multiple onChange={handleSelect}>
                             {data.zones.map((zone) => (
                                 <option key={zone._id} value={zone._id}>{zone.zoneName}</option>
                             ))}

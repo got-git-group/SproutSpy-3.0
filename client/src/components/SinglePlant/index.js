@@ -1,6 +1,6 @@
 import "./index.scss";
 import { useQuery, useMutation } from "@apollo/client";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { QUERY_SINGLE_PLANT } from "../../utils/queries";
 import { REMOVE_PLANT } from "../../utils/mutations";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -50,7 +50,9 @@ const SinglePlant = () => {
           {/* require login to click these buttons */}
           {isAuthenticated && (
             <button class="plantBtn" id="editBtn" type="button">
-              Edit Plant
+              <Link key={plantData._id} to={{
+                pathname: `/plants/${plantData._id}/edit`,
+              }}>Edit Plant</Link>
             </button>
           )}
           {/* edit will need to link to a form similar to add plant that allow editing of details - we could limit what details can be edited */}

@@ -20,46 +20,53 @@ planting zone, as well as search for local public gardens for those who do not h
 <ins>User Story</ins>
 
 ```
-AS A future gardener
+AS A novice gardener
 I WANT: -to know what plants I can grow near me,
-        -to get instructions for growing those plants
-        -to find a community garden
-        -to know the current weather to plan the day accordingly
-        -to sign up as a new user or login, in order to add a plant to the database
-SO THAT: I can start gardening with confidence
+        -to learn the basic planting requirements for each plant
+        -to sign up as a new user or login, in order to edit or delete a plant in the database
+SO THAT: I can garden with confidence
 ```
 <ins>Acceptance Criteria</ins>
 
 ```
 GIVEN I am using the Sprout Spy website to learn how to garden, 
 WHEN I open the Sprout Spy website, 
-THEN i see a a welcome modal that lightens the mood of anxious future gardeners.
-WHEN I click an answer for the modal, 
-THEN I see the Openweathermaps header, and google maps API to search for local gardens and local planting zone information.
-WHEN I enter a zip code in the search bar,
-THEN I see with the results for the corresponding agricultural zone as well as local gardens.
+THEN I see a drop down menu to select my USDA zone.
+WHEN I click a zone, 
+THEN I see a results page filled with plants that I can grow in my zone, with details about each plant.
+WHEN I click View Plant on a plant result,
+THEN a new page opens with more details of that plant. If I am logged in I may edit or delete the plant.
 WHEN I click to see results,
 THEN I am taken to the results page that lists plants I can grow in my zone.
 WHEN I log in or sign up,
-THEN I can add a plant to the database.
+THEN the navigation bar changes and when viewing a plant I can edit or remove a plant in the database.
 ```
 	
 ## Technologies
 This project is created with:
 * Full MERN Stack
 * Auth0 for authentication
-
---- UPDATE TECH ---
+* React
+* Apollo & GraphQL
+* MongoDB & Mongoose
+* Heroku
+* Express
+* Node
+* HTML
+* CSS & SCSS
 
 ## Screenshot
 
---- ADD NEW SCREENSHOTS ---
+![screenshot of homepage](./client/src/assets/images/welcomeScreenshot.PNG)
+![screenshot of homepage](./client/src/assets/images/resultsScreenshot.PNG)
+![screenshot of homepage](./client/src/assets/images/singlePlantScreenshot.PNG)
+![screenshot of homepage](./client/src/assets/images/calendarScreenshot.PNG)
 
 ## Setup
 
-Please visit ---ADD NEW LINKS--- to see the repo in Github
+Please visit https://github.com/got-git-group/SproutSpy-3.0 to see the repo in Github
 <br/>
-Please visit ---ADD NEW LINKS--- to see deployed code through Github Pages.
+Please visit https://sprout-spy.herokuapp.com/ to see deployed code through Github Pages.
 
 ## License
 
