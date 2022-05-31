@@ -24,8 +24,11 @@ const AddPlant = () => {
         });
     const handleChange = (event) => {
         const { name, value } = event.target;
-
-        setFormState({...formState, [name]: !isNaN(parseInt(value)) ? parseInt(value) : value});
+        let tempValue = value;
+        if (name === 'outdoorStartCalc' || name === 'indoorStartCalc') {
+            tempValue = parseInt(value);
+        }
+        setFormState({...formState, [name]: tempValue});
         console.log(formState, 'on change');
     };
 
