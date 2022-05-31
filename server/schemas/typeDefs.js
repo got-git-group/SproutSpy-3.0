@@ -33,9 +33,9 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addPlant(plantName: String!, spacing: String!, seedDepth: String, plantImg: String, sunlight: String!, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String], recommended: Boolean): Plant
+    addPlant(plantName: String!, spacing: String!, sunlight: String!, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
     removePlant(plantId: ID!): Plant
-    updatePlant(plantId: ID!, plantName: String, spacing: String, seedDepth: String, plantImg: String, sunlight: String, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String], recommended: Boolean): Plant
+    updatePlant(plantId: ID!, plantName: String, spacing: String, seedDepth: String, plantImg: String, sunlight: String, indoorStartCalc: Int, outdoorStartCalc: Int, zones: [String]): Plant
   }
 `;
 
