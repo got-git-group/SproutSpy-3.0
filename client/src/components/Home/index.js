@@ -10,12 +10,10 @@ const Home = () => {
   const { isAuthenticated, user } = useAuth0();
   const loggedIn = isAuthenticated;
   if ( loggedIn ) {
-    console.log(user);
      username = user.nickname;
   }
 
     const { loading, error, data } = useQuery(QUERY_ZONES);
-    console.log(data);
     if (!data) {
         return <p>Loading...</p>;
     };

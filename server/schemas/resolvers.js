@@ -52,12 +52,13 @@ const resolvers = {
           sunlight,
           indoorStartCalc,
           outdoorStartCalc,
+          recommended: false,
         });
         if (!zones) {
           console.log("no zones");
           return await newPlant.save();
         } else if (zones) {
-          console.log("has zones")
+          console.log("has zones");
           const updatedPlant = await newPlant.save();
           console.log(updatedPlant);
           return await Plant.findOneAndUpdate(
@@ -71,12 +72,12 @@ const resolvers = {
       }
     },
     removePlant: async (parent, { plantId }, { auth }) => {
-      if (auth.isAuthenticated) {
-        return Plant.findOneAndDelete({
-          _id: plantId
-        });
+      if (!auth.isAuthenticated) {
+        throw new AuthenticationError("You need to be logged in!");
       }
-      throw new AuthenticationError("You need to be logged in!");
+      return Plant.findOneAndDelete({
+        _id: plantId,
+      });
     },
     updatePlant: async (
       parent,
@@ -90,9 +91,11 @@ const resolvers = {
         indoorStartCalc,
         outdoorStartCalc,
       },
-      context
+      { auth }
     ) => {
-      // if (context.user) {
+      if (!auth.isAuthenticated) {
+        throw new AuthenticationError("You need to be logged in!");
+      }
       const updatedPlant = await Plant.findOneAndUpdate(
         {
           _id: plantId,
@@ -110,15 +113,15 @@ const resolvers = {
           new: true,
         }
       );
-        // if (!zones) {
-          return updatedPlant;
-        // } else if (zones) {
-        //   return await Plant.findOneAndUpdate(
-        //     { _id: updatedPlant._id },
-        //     { $push: { zones: { $each: zones } } },
-        //     { new: true }
-        //   );
-        // }
+      // if (!zones) {
+      return updatedPlant;
+      // } else if (zones) {
+      //   return await Plant.findOneAndUpdate(
+      //     { _id: updatedPlant._id },
+      //     { $push: { zones: { $each: zones } } },
+      //     { new: true }
+      //   );
+      // }
       // }
       // throw new AuthenticationError('You need to be logged in!');
     },
