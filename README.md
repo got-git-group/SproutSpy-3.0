@@ -66,7 +66,7 @@ This project is created with:
 
 Please visit https://github.com/got-git-group/SproutSpy-3.0 to see the repo in Github
 <br/>
-Please visit https://sprout-spy.herokuapp.com/ to see deployed code through Github Pages.
+Please visit https://sprout-spy.herokuapp.com/ to see deployed code through Heroku.
 
 ## License
 
