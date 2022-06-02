@@ -57,10 +57,10 @@ This project is created with:
 
 ## Screenshot
 
-![screenshot of homepage](./client/src/assets/images/welcomeScreenshot.PNG)
-![screenshot of homepage](./client/src/assets/images/resultsScreenshot.PNG)
-![screenshot of homepage](./client/src/assets/images/singlePlantScreenshot.PNG)
-![screenshot of homepage](./client/src/assets/images/calendarScreenshot.PNG)
+![screenshot of homepage](./client/src/assets/images/welcomeScreenshot.jpg)
+![screenshot of homepage](./client/src/assets/images/resultsScreenshot.jpg)
+![screenshot of homepage](./client/src/assets/images/singlePlantScreenshot.jpg)
+![screenshot of homepage](./client/src/assets/images/calendarScreenshot.jpg)
 
 ## Setup
 
