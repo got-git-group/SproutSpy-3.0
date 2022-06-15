@@ -57,16 +57,16 @@ This project is created with:
 
 ## Screenshot
 
-![screenshot of homepage](./client/src/assets/images/welcomeScreenshot.PNG)
-![screenshot of homepage](./client/src/assets/images/resultsScreenshot.PNG)
-![screenshot of homepage](./client/src/assets/images/singlePlantScreenshot.PNG)
-![screenshot of homepage](./client/src/assets/images/calendarScreenshot.PNG)
+![screenshot of homepage](./client/src/assets/images/welcomeScreenshot.jpg)
+![screenshot of homepage](./client/src/assets/images/resultsScreenshot.jpg)
+![screenshot of homepage](./client/src/assets/images/singlePlantScreenshot.jpg)
+![screenshot of homepage](./client/src/assets/images/calendarScreenshot.jpg)
 
 ## Setup
 
 Please visit https://github.com/got-git-group/SproutSpy-3.0 to see the repo in Github
 <br/>
-Please visit https://sprout-spy.herokuapp.com/ to see deployed code through Github Pages.
+Please visit https://sprout-spy.herokuapp.com/ to see deployed code through Heroku.
 
 ## License
 
