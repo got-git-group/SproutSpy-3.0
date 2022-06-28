@@ -15,7 +15,7 @@
   // flex-direction: column;
 }
 
-#zipcodeInput {
+#zipLookup {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -23,6 +23,20 @@
   margin-top: 15vh;
   background-color: white;
   padding: 30px;
+}
+
+#zipcodeInput {
+  display: flex;
+  flex-direction: column;
+  // width: 400px;
+  // margin: auto;
+  // margin-top: 15vh;
+  // background-color: white;
+  // padding: 30px;
+}
+
+.zoneResults {
+  text-align: center;
 }
 
 #button1 {

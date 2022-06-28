@@ -14,16 +14,19 @@ const Home = () => {
   }
 
   // ZIPCODE INPUT
-    const zipInput = document.querySelector('#zip');
-    const zoneResults = document.querySelector('.zoneResults');
-    let getZip = '98052';
+  let zipInput;
+  let zoneResults;
+  let getZip = '98052';
 
-   const handleSubmit = async (event) => {
-        console.log('searchBtn clicked');
-        event.preventDefault();
-        getZip = zipInput.value.trim();
-        getAgZone(getZip);
-    };
+  const handleSubmit = (event) => {
+    zipInput = document.querySelector('#zip');
+    zoneResults = document.querySelector('.zoneResults');
+    console.log('searchBtn clicked');
+    event.preventDefault();
+    console.log(zipInput.value);
+    getZip = zipInput.value.trim();
+    getAgZone(getZip);
+  };
   
   // API to pull agricultural zone
   const getAgZone = function (getZipCode) {
@@ -54,42 +57,39 @@ const Home = () => {
     init();
   });
 
-    const { loading, error, data } = useQuery(QUERY_ZONES);
-    if (!data) {
-        return <p>Loading...</p>;
-    };
-    
-    return (
-        <div id="homePage">
-            <form id="zoneSelect">
-                <h1 id="welcome">Welcome {username}!</h1>
-                <h3 id="choose">Choose your grow zone to get started:</h3>
-                <div className="dropdown">
-                    <button className="dropbtn">Zones</button>
-                    <div className="dropdown-content">
-                        {data.zones.map((zone) => (
-                            <Link key={zone._id} to={{
-                                pathname: `/results/${zone._id}`,
-                            }}>{zone.zoneName}</Link>
-                            // <a href="/results">
-                            // {zone.zoneName}</a>
-                        ))}
-                    </div>
-                </div>
-            </form>
+  const { loading, error, data } = useQuery(QUERY_ZONES);
+  if (!data) {
+      return <p>Loading...</p>;
+  };
+  
+  return (
+      <div id="homePage">
+          <form id="zoneSelect">
+              <h1 id="welcome">Welcome {username}!</h1>
+              <h3 id="choose">Choose your grow zone to get started:</h3>
+              <div className="dropdown">
+                  <button className="dropbtn">Zones</button>
+                  <div className="dropdown-content">
+                      {data.zones.map((zone) => (
+                          <Link key={zone._id} to={{
+                              pathname: `/results/${zone._id}`,
+                          }}>{zone.zoneName}</Link>
+                          // <a href="/results">
+                          // {zone.zoneName}</a>
+                      ))}
+                  </div>
+              </div>
+          </form>
+          <div id="zipLookup">
             <form id="zipcodeInput" onSubmit={handleSubmit}>
                 <label htmlFor="zip" id="text1">Don't know your zone? Enter your zipcode to find out!</label><br/>
                 <input id="zip" name="zip" type="text" pattern="[0-9]*"/>
                 <input type="submit" id="button1"/>
             </form>
-            <section id="zoneLookup">
-                <section className="results">
-                    <h3 className="zoneResults"></h3>
-                    <a id="zoneLink"></a>
-                </section>
-            </section>
-        </div>
-    )
+            <h3 className="zoneResults"> </h3>
+          </div>
+      </div>
+  )
 };
 
 export default Home;
