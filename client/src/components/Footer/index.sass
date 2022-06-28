@@ -1,0 +1,75 @@
+.footer 
+    display: flex
+    height: 45px
+    position: fixed
+    width: stretch
+    background-color: #ffd1dc
+    justify-content: space-between
+    align-items: center
+    border-radius: 0 0 35px 35px
+    font-size: 18px
+    z-index: 1
+    margin: 0
+  
+
+        h1:
+            color: #2c8b71
+            padding-left: 15px
+            margin: 0
+
+
+$threeTwenty: 500px
+
+@media (max-width: $threeTwenty) 
+
+    html
+        overflow-y: scroll
+        bottom: 0
+        top: 0
+        left: 0
+        right: 0
+
+        body
+            display: block
+            margin: none
+            .glossCard
+                img
+                    display: 
+                        border-bottom: solid 2px #ffd1dc
+                        border-top: solid 4px #ffd1dc
+                        border-left: solid 2px #ffd1dc
+                        border-right: solid 2px #ffd1dc
+
+            .footer
+                position: absolute
+                left: 0
+                top: 0
+                display: block
+                width: 50px
+                height: 3090px
+                border-radius: 0  0 40px 40px
+            
+            header
+                h1
+                    position: absolute
+                    display: block
+                    font-color: (#2c8b71)
+                    top: 0
+                    margin-left: 100px 
+                    padding: 0
+                    margin-inline-start: 0px
+
+                a
+                    width: 1em
+                    margin: auto
+                    line-height: 10px
+                    
+                    button
+                        padding: 0
+            img
+                display: block
+                width: max-content
+            .logo
+                display: none
+                      
+                        

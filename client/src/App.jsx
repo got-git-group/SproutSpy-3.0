@@ -1,9 +1,14 @@
+import './styles/index.sass'
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import ApolloWrapper from './utils/ApolloWrapper';
 import Loading from './utils/loading';
+<<<<<<< HEAD:client/src/App.js
 
+=======
+// import { setContext } from '@apollo/client/link/context';
+>>>>>>> ce5bdcadaccf12009fdf038e4717bfc7066b45de:client/src/App.jsx
 import Layout from './components/Layout';
 import Home from './components/Home';
 import AddPlant from './components/AddPlant';

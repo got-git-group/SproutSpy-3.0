@@ -1,8 +1,14 @@
 import './index.scss';
+import './index.sass'
 import { useAuth0 } from '@auth0/auth0-react' ;
+<<<<<<< HEAD:client/src/components/Nav/index.js
 import { useNavigate } from 'react-router-dom';
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> ce5bdcadaccf12009fdf038e4717bfc7066b45de:client/src/components/Nav/index.jsx
 import LoginButton from '../LoginButton';
 import LogoutButton from '../LogoutButton';
+import home from '../../assets/icons/home.png';
 
 const Nav = () => {
   let picture = '';
@@ -23,7 +29,7 @@ const Nav = () => {
             <nav className='nav'>
                 <ul className='menunav'>
                     <li className='itemnav'>
-                        <a href='/'>Home</a>
+                        <Link to={home}>Home</Link>
                     </li>
                     <li className='itemnav'>
                         <a href='/glossary'>Glossary</a>

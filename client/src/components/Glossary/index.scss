@@ -1,22 +1,24 @@
 #glossary {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  overflow-y: scroll;
   row-gap: 15px;
   column-gap: 10px;
-  width: 90vw;
+  width: min-content;
   margin: auto;
   background-color: skyblue;
+<<<<<<< HEAD
   border-radius: 5px;
+=======
+  border-radius: 5px; 
+  z-index: 0;
+  top: 0;
+  margin-top: 0;
+  position: center
+>>>>>>> ce5bdcadaccf12009fdf038e4717bfc7066b45de
 }
 
 .glossCard {
   text-align: center;
-	margin: 20px;
-	padding: 20px;
   border-bottom: solid 2px #ffd1dc;
-  max-width: 500px;
 }
 
 .glossImage  {

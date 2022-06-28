@@ -1,4 +1,4 @@
-import './index.scss';
+import './index.sass';
 import Logo from '../../assets/images/logo.png';
 
 

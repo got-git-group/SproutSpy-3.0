@@ -1,3 +1,4 @@
+import './index.sass'
 import './index.scss';
 import React from "react";
 import { useQuery } from '@apollo/client';
