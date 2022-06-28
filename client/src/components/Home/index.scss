@@ -15,6 +15,42 @@
   // flex-direction: column;
 }
 
+#zipLookup {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  margin-top: 15vh;
+  background-color: white;
+  padding: 30px;
+}
+
+#zipcodeInput {
+  display: flex;
+  flex-direction: column;
+  // width: 400px;
+  // margin: auto;
+  // margin-top: 15vh;
+  // background-color: white;
+  // padding: 30px;
+}
+
+.zoneResults {
+  text-align: center;
+}
+
+#button1 {
+  margin: auto;
+  margin-top: 15px;
+  width: 100px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
 #welcome {
   text-align: center;
   padding-top: 30px;
