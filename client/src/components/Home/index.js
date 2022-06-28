@@ -13,6 +13,47 @@ const Home = () => {
      username = user.nickname;
   }
 
+  // ZIPCODE INPUT
+    const zipInput = document.querySelector('#zip');
+    const zoneResults = document.querySelector('.zoneResults');
+    let getZip = '98052';
+
+   const handleSubmit = async (event) => {
+        console.log('searchBtn clicked');
+        event.preventDefault();
+        getZip = zipInput.value.trim();
+        getAgZone(getZip);
+    };
+  
+  // API to pull agricultural zone
+  const getAgZone = function (getZipCode) {
+    // stitch the zipcode into the API URL
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Host': 'plant-hardiness-zone.p.rapidapi.com',
+        'X-RapidAPI-Key': 'ae549cbaffmsh7d6fc2689fc82d0p126e42jsn26f834053a23'
+      }
+    };
+    const agURL = `https://plant-hardiness-zone.p.rapidapi.com/zipcodes/${getZipCode}`;
+    fetch(agURL, options)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        zoneResults.textContent = `You live in Zone ${data.hardiness_zone}!`;
+      });
+  };
+  
+  const init = function () {
+    // initMap();
+    // geocode({ address: getZip });
+    getAgZone(getZip);
+  };
+  
+  document.addEventListener('DOMContentLoaded', (e) => {
+    init();
+  });
+
     const { loading, error, data } = useQuery(QUERY_ZONES);
     if (!data) {
         return <p>Loading...</p>;
@@ -36,6 +77,17 @@ const Home = () => {
                     </div>
                 </div>
             </form>
+            <form id="zipcodeInput" onSubmit={handleSubmit}>
+                <label htmlFor="zip" id="text1">Don't know your zone? Enter your zipcode to find out!</label><br/>
+                <input id="zip" name="zip" type="text" pattern="[0-9]*"/>
+                <input type="submit" id="button1"/>
+            </form>
+            <section id="zoneLookup">
+                <section className="results">
+                    <h3 className="zoneResults"></h3>
+                    <a id="zoneLink"></a>
+                </section>
+            </section>
         </div>
     )
 };
